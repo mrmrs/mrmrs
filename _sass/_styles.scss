@@ -1,1 +1,124 @@
 // Your styles here.
+
+body {
+  font-family: "ff-meta-serif-web-pro",georgia,serif;
+  text-align: center; }
+
+h2 {
+  font-size: 40px;
+  margin-top: 32px;
+  text-align: center; }
+
+h4 {
+  font-weight: normal;
+  line-height: 1.618;
+  margin-top: 20px;
+  padding: 10px 0; }
+
+ul {
+  margin: 40px 0 0 0;
+  padding: 0; }
+
+ul li {
+  border-top: 1px solid white;
+  font-size: 18px;
+  line-height: 1.618;
+  text-align: center;
+  width: 100%; }
+
+li a {
+  background: #f3f3f3;
+  color: #333;
+  display: block;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  padding: 10px 0; }
+
+.oh-my-read-these,
+.also-like-video-games-and-xkcd {
+  line-height: 1.618;
+  font-size: 22px;
+  padding: 2em 0;
+  max-width: 768px;
+  margin: 0 auto; }
+
+a:hover {
+  background-color: #BB1C48;
+  color: #fff;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  text-shadow: 0px 1px 2px black; }
+
+.last {
+  border-bottom: 1px solid #eeeeee; }
+
+a {
+  text-decoration: none;
+  color: #999;
+  font-weight: lighter; }
+
+.£ {
+  background: #333333 url({{site.url}}/img/bg_o.jpg) no-repeat 0 0;
+  background-size: cover;
+  padding: 4em 0;
+  text-align: center;
+  margin-bottom: 2em; }
+
+.logo {
+  max-width: 128px; }
+
+a:link {
+  color: #999;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; }
+
+a:visited {
+  color: #999; }
+
+a:hover {
+  color: #333;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-shadow: none;
+  background-color: #fff; }
+
+a:active {
+  color: #222;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; }
+
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+/* All Mobile Sizes (devices and browser) */
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+.most-boring h1,
+.most-boring h2,
+.most-boring h3 {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 2; }
+
+.eh {
+  margin-top: 2em; }
+
+.author {
+  font-size: 12px;
+  display: block;
+  color: #555; }
+
+.the-reading-list li {
+  margin-bottom: 1.5em; }
+.the-reading-list li a {
+  color: #222;
+  background: white;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s; }
+  .the-reading-list li a:hover {
+    color: #999;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    transition: color 0.5s; }
