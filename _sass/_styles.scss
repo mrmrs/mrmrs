@@ -2,7 +2,8 @@
 
 body {
   font-family: "ff-meta-serif-web-pro",georgia,serif;
-  text-align: center; }
+  text-align: center; 
+}
 
 article h1 {
   font-size:42px;
@@ -150,3 +151,23 @@ a:active {
   transition: color 0.5s; 
 }
 
+.project-info {
+  display:block;
+
+}
+
+.img {
+  text-align:center;
+  max-width:400px;
+  max-height:300px;
+}
+
+.i-want-to-go-home {
+  &:hover {
+    text-decoration:none; 
+    border:0;
+    outline:0;
+    background:transparent;
+    opacity:0.8;
+  }
+}
