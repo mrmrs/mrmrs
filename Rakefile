@@ -16,7 +16,3 @@ task :clean do
   system "rm -rf _site"
 end # task :clean
 
-desc "Minify CSS"
-task :minify do
-  system "cd css && curl -X POST -s --data-urlencode 'input@i.css' http://www.cssminifier.com/raw > i.min.css && rm i.css && mv i.min.css i.css"
-end # task :clean

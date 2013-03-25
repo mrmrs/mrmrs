@@ -4,6 +4,19 @@ body {
   font-family: "ff-meta-serif-web-pro",georgia,serif;
   text-align: center; }
 
+article h1 {
+  font-size:42px;
+  margin:1em 0 0 0;
+  line-height:0;
+  padding:0;
+}
+
+@media screen and (max-width:480px) {
+  article h1 {
+    font-size:32px; 
+  }
+}
+
 h2 {
   font-size: 40px;
   margin-top: 32px;
@@ -27,13 +40,13 @@ ul li {
   width: 100%; }
 
 li a {
-  background: #f3f3f3;
+  font-size:20px;
   color: #333;
   display: block;
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   transition: background-color 0.5s;
-  padding: 10px 0; }
+  padding: .75em 0; }
 
 .oh-my-read-these,
 .also-like-video-games-and-xkcd {
@@ -62,9 +75,11 @@ a {
 .£ {
   background:#333 url(http://dlu344star2bj.cloudfront.net/bg_o.jpg) no-repeat 0 0;
   background-size: cover;
-  padding: 4em 0;
   text-align: center;
-  margin-bottom: 2em; }
+  margin-bottom: 2em; 
+  padding:1em 0;
+  img {width:100%;}
+}
 
 .logo {
   max-width: 128px; }
@@ -99,7 +114,13 @@ a:active {
 .most-boring h3 {
   font-size: 14px;
   font-weight: 100;
-  line-height: 2; }
+  line-height: 2; 
+}
+
+.most-boring {
+  border-top:1px dotted #000;
+  padding:1em 1em;
+}
 
 .eh {
   margin-top: 2em; }
@@ -107,18 +128,25 @@ a:active {
 .author {
   font-size: 12px;
   display: block;
-  color: #555; }
+  color: #555; 
+}
 
 .the-reading-list li {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em; 
+}
+
 .the-reading-list li a {
   color: #222;
   background: white;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
-  transition: color 0.5s; }
-  .the-reading-list li a:hover {
-    color: #999;
-    -webkit-transition: color 0.5s;
-    -moz-transition: color 0.5s;
-    transition: color 0.5s; }
+  transition: color 0.5s; 
+}
+
+.the-reading-list li a:hover {
+  color: #999;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s; 
+}
+

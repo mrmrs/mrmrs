@@ -336,6 +336,15 @@ body {
   font-family: "ff-meta-serif-web-pro",georgia,serif;
   text-align: center; }
 
+article h1 {
+  font-size: 42px;
+  margin: 1em 0 0 0;
+  line-height: 0;
+  padding: 0; }
+
+@media screen and (max-width: 480px) {
+  article h1 {
+    font-size: 32px; } }
 h2 {
   font-size: 40px;
   margin-top: 32px;
@@ -359,13 +368,13 @@ ul li {
   width: 100%; }
 
 li a {
-  background: #f3f3f3;
+  font-size: 20px;
   color: #333;
   display: block;
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   transition: background-color 0.5s;
-  padding: 10px 0; }
+  padding: 0.75em 0; }
 
 .oh-my-read-these,
 .also-like-video-games-and-xkcd {
@@ -394,9 +403,11 @@ a {
 .£ {
   background: #333333 url(http://dlu344star2bj.cloudfront.net/bg_o.jpg) no-repeat 0 0;
   background-size: cover;
-  padding: 4em 0;
   text-align: center;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  padding: 1em 0; }
+  .£ img {
+    width: 100%; }
 
 .logo {
   max-width: 128px; }
@@ -432,6 +443,10 @@ a:active {
   font-size: 14px;
   font-weight: 100;
   line-height: 2; }
+
+.most-boring {
+  border-top: 1px dotted black;
+  padding: 1em 1em; }
 
 .eh {
   margin-top: 2em; }

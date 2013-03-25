@@ -13,8 +13,8 @@ author: "mrmrs"
 #url: "[http:// ]"
 # Chance this when you generate your site for production to your production URL i.e http://mrsjxn.com
 # ===============
-#url: "http://localhost:4000"
-url: "http://mrmrs.cc"
+url: "http://localhost:4000"
+#url: "http://mrmrs.cc"
 
 # Publish future posts or not option. 
 # ===============
