@@ -31,6 +31,12 @@ h2, .h2 {
 p, ul, ol, .p, h3, h4, h5, h6 {
   font-size: 1.125rem;
   font-weight: 400;
+  line-height:1.6;
+}
+
+.intro {
+  font-size:1.25rem!important;
+  line-height:1.5!important;
 }
 
 small, .small {
@@ -59,7 +65,7 @@ strong, .bold {
     
     @media screen and (min-width: 768px) {
       h1, .h1 { font-size: 4rem; }
-      h2, .h2 { font-size: 2rem; } 
+      h2, .h2,.intro { font-size: 2rem; } 
       .t-plus-2col {
         .cell-left,
         .cell-right {
@@ -73,5 +79,5 @@ strong, .bold {
     
     @media screen and (min-width: 1024px) {
       h1, .h1 { font-size: 6rem; }
-      h2, .h2 { font-size: 3rem; }
+      h2, .h2, .intro { font-size: 3rem; }
     }
