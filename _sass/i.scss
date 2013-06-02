@@ -1,4 +1,10 @@
-// Include all partials you want compiled to i.css. You don't need to include the _ (underscore). Hooray.
 @import "normalize";
-@import "grid";
-@import "styles";
+
+@import "base";
+@import "type";
+@import "structure";
+@import "dimensions";
+
+@import "theme";
+@import "icons";
+@import "animations";

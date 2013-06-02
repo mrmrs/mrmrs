@@ -1,0 +1,35 @@
+/*
+
+        Mathematical Base
+
+
+*/
+
+* {box-sizing:border-box;}
+
+h1, h2, h3, h4, h5, h6, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {width:100%;}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+ul {list-style-type:none;}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

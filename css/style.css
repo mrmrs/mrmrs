@@ -1,0 +1,382 @@
+/*
+
+        Mathematical
+        A simple, responsive framework
+        
+        Made with love by Jxnblk
+
+
+*/
+/*
+
+        Mathematical Base
+
+
+*/
+h1, h2, h3, h4, h5, h6, ul, ol {
+  margin: 0;
+  padding: 0; }
+
+/*
+
+        Mathematical Type
+
+
+*/
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  font-weight: 400; }
+
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 400; }
+
+h2, .h2 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: 400; }
+
+p, ul, ol, .p, h3, h4, h5, h6 {
+  font-size: 1.125rem;
+  font-weight: 400; }
+
+small, .small {
+  font-size: .875rem;
+  -webkit-text-size-adjust: 100%; }
+
+strong, .bold {
+  font-weight: 700; }
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em; }
+
+.txtcen {
+  text-align: center; }
+
+@media screen and (min-width: 480px) {
+  h1, .h1 {
+    font-size: 3rem; }
+
+  h2, .h2 {
+    font-size: 1.75rem; }
+
+  p, ul, ol, .p {
+    font-size: 1.25rem; }
+
+  small, .small {
+    font-size: 1rem; } }
+@media screen and (min-width: 640px) {
+  h1, .h1 {
+    font-size: 4rem; }
+
+  h2, .h2 {
+    font-size: 2rem; } }
+@media screen and (min-width: 1024px) {
+  h1, .h1 {
+    font-size: 6rem; }
+
+  h2, .h2 {
+    font-size: 3rem; } }
+/*
+
+        Mathematical Structure
+
+
+*/
+.mar0 {
+  margin: 0; }
+
+.mar {
+  margin: 1rem; }
+
+.marto {
+  margin-top: 1rem; }
+
+.marri {
+  margin-right: 1rem; }
+
+.marbo {
+  margin-bottom: 1rem; }
+
+.marle {
+  margin-left: 1rem; }
+
+.marto2 {
+  margin-top: 2rem; }
+
+.marri2 {
+  margin-right: 2rem; }
+
+.marbo2 {
+  margin-bottom: 2rem; }
+
+.marle2 {
+  margin-left: 2rem; }
+
+.pad0 {
+  padding: 0; }
+
+.pad {
+  padding: 1rem; }
+
+.padto {
+  padding-top: 1rem; }
+
+.padri {
+  padding-right: 1rem; }
+
+.padbo {
+  padding-bottom: 1rem; }
+
+.padle {
+  padding-left: 1rem; }
+
+.pad2 {
+  padding: 2rem; }
+
+.padto2 {
+  padding-top: 2rem; }
+
+.padri2 {
+  padding-right: 2rem; }
+
+.padbo2 {
+  padding-bottom: 2rem; }
+
+.padle2 {
+  padding-left: 2rem; }
+
+@media screen and (min-width: 640px) {
+  .mar {
+    margin: 2rem; }
+
+  .marto {
+    margin-top: 2rem; }
+
+  .marri {
+    margin-right: 2rem; }
+
+  .marbo {
+    margin-bottom: 2rem; }
+
+  .marle {
+    margin-left: 2rem; }
+
+  .marto2 {
+    margin-top: 4rem; }
+
+  .marri2 {
+    margin-right: 4rem; }
+
+  .marbo2 {
+    margin-bottom: 4rem; }
+
+  .marle2 {
+    margin-left: 4rem; }
+
+  .pad {
+    padding: 2rem; }
+
+  .padto {
+    padding-top: 2rem; }
+
+  .padri {
+    padding-right: 2rem; }
+
+  .padbo {
+    padding-bottom: 2rem; }
+
+  .padle {
+    padding-left: 2rem; }
+
+  .pad2 {
+    padding: 4rem; }
+
+  .padto2 {
+    padding-top: 4rem; }
+
+  .padri2 {
+    padding-right: 4rem; }
+
+  .padbo2 {
+    padding-bottom: 4rem; }
+
+  .padle2 {
+    padding-left: 4rem; } }
+.tappad {
+  display: block;
+  padding: 0 1rem;
+  line-height: 3rem; }
+
+.bobox {
+  box-sizing: border-box; }
+
+.db {
+  display: block; }
+
+.dib {
+  display: inline-block; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.wrap {
+  margin: 0 auto; }
+
+.posrel {
+  position: relative; }
+
+.posabs {
+  position: absolute; }
+
+.to0 {
+  top: 0; }
+
+.ri0 {
+  right: 0; }
+
+.bo0 {
+  bottom: 0; }
+
+.le0 {
+  left: 0; }
+
+.to1 {
+  top: 1rem; }
+
+.ri0 {
+  right: 1rem; }
+
+.bo1 {
+  bottom: 1rem; }
+
+.le1 {
+  left: 1rem; }
+
+.to2 {
+  top: 2rem; }
+
+.ri2 {
+  right: 2rem; }
+
+.bo2 {
+  bottom: 2rem; }
+
+.le2 {
+  left: 2rem; }
+
+.z1 {
+  z-index: 100; }
+
+.z2 {
+  z-index: 200; }
+
+.z3 {
+  z-index: 300; }
+
+.z4 {
+  z-index: 400; }
+
+.z5 {
+  z-index: 500; }
+
+.overhide {
+  overflow: hidden; }
+
+.scroll-y {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+/*
+
+        Mathematical Theme
+
+
+*/
+body {
+  color: #444444;
+  background-color: #fff;
+  font-family: "skolar", Georgia, serif; }
+
+a {
+  color: #00ccff;
+  text-decoration: none; }
+
+a:hover {
+  color: #00a3cc; }
+
+.dkgry {
+  color: #444444; }
+
+.mdgry {
+  color: #999999; }
+
+.ltgry {
+  color: #eeeeee; }
+
+.wht {
+  color: #fff; }
+
+.link {
+  color: #00ccff; }
+
+.bg-dkgry {
+  background-color: #444444; }
+
+.bg-mdgry {
+  background-color: #999999; }
+
+.bg-ltgry {
+  background-color: #eeeeee; }
+
+.bg-link {
+  background-color: #00ccff; }
+
+.boto {
+  border-top: 1px solid; }
+
+.bori {
+  border-right: 1px solid; }
+
+.bobo {
+  border-bottom: 1px solid; }
+
+.bole {
+  border-left: 1px solid; }
+
+.bo-dkgry {
+  border-color: #444444; }
+
+.bo-mdgry {
+  border-color: #999999; }
+
+.bo-ltgry {
+  border-color: #eeeeee; }
+
+.bo-wht {
+  border-color: #fff; }
+
+.rc {
+  border-radius: .25rem; }
+
+.circ {
+  border-radius: 50%; }
+
+/*
+
+        Mathematical Icons
+
+
+*/
+/*
+
+        Mathematical Animations
+
+
+*/

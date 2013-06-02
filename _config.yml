@@ -1,10 +1,10 @@
 # This will be the first part of the title tag for your site <title> site.name </title>
 # ===============
-name: "mrmrs"
+name: "MRMRS"
 
 # Populates the meta description for the site. Should be under 150 characters for best SEO purposes.
 # ===============
-descripiton: "MRMRS - Designer / Developer"
+descripiton: "Adam Morse is a designer / developer focused on readability, responsive interfaces, and client-side performance. User advocate. Vim evangelist."
 
 # Owner (organization or individual) of site content
 # ===============
@@ -29,23 +29,8 @@ future: false
 # I normally exclude _sass, README*, and .gitignore
 # Directories that start with an underscore _ are not copied over by default. Still like to include _sass anyways.
 # ===============
-exclude: .gitignore, README.md
-
-# Pagination variable for how many posts to show in a list
-# ===============
-#paginate: 5
+exclude: [.gitignore, README.md]
 
 # Style of permalinks
 # ===============
 permalink: pretty
-
-# Variable format options for URL styles below
-# ===============
-# pretty                                          => /2009/04/29/slap-chop/index.html
-# /:month-month:day-:year/:title.html/            => 04-29-2009/slap-chop.html
-# /blog/:yearr/:month/:day/:title                 => /blog/2009/04/29/slap-chop/index.html
-
-# UnComment once you have pygments installed. Used for code syntax highlighting.
-#pygments: true
-#
-#
