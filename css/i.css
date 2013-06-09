@@ -871,3 +871,10 @@ dl {
 .h-dib {
   display: inline-block;
   padding-right: 10px; }
+
+.list-disc {
+  list-style-type: disc;
+  margin-left: 20px; }
+
+.list-disc li {
+  margin-bottom: 5px; }
