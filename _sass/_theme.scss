@@ -68,11 +68,11 @@ a:hover {
 
 .hov-scale {
   opacity:1;
-  -webkit-transition:-webkit-transform ease-in-out .4s, opacity ease-in-out .4s;
+  -webkit-transition:-webkit-transform ease-in-out .3s, opacity ease-in-out .3s;
   -webkit-transform:scale(1); 
   &:hover {
-    opacity:0.6;
-    -webkit-transition:-webkit-transform ease-in-out .4s, opacity ease-in-out .4s;
+    opacity:0.9;
+    -webkit-transition:-webkit-transform ease-in-out .3s, opacity ease-in-out .3s;
     -webkit-transform:scale(.9); 
   }
 }
