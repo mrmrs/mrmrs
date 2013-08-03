@@ -669,22 +669,26 @@ ul {
 /* Color variables
    ========================================================================== */
 body {
-  color: #222222;
+  color: #111111;
   background-color: #fff;
   font-family: "skolar", Georgia, serif; }
 
 a {
-  color: #00ccff;
-  text-decoration: none; }
+  color: #e8237e;
+  text-decoration: none;
+  -webkit-transform: color .3s;
+  transform: color .3s; }
 
 a:hover {
-  color: #00a3cc; }
+  color: #c41465;
+  -webkit-transform: color .3s;
+  transform: color .3s; }
 
 .dkgry {
-  color: #222222; }
+  color: #111111; }
 
 .mdgry {
-  color: #999999; }
+  color: #888888; }
 
 .ltgry {
   color: #eeeeee; }
@@ -693,19 +697,19 @@ a:hover {
   color: #fff; }
 
 .link {
-  color: #00ccff; }
+  color: #e8237e; }
 
 .bg-dkgry {
-  background-color: #222222; }
+  background-color: #111111; }
 
 .bg-mdgry {
-  background-color: #999999; }
+  background-color: #888888; }
 
 .bg-ltgry {
   background-color: #eeeeee; }
 
 .bg-link {
-  background-color: #00ccff; }
+  background-color: #e8237e; }
 
 .boto {
   border-top: 1px solid; }
@@ -720,10 +724,10 @@ a:hover {
   border-left: 1px solid; }
 
 .bo-dkgry {
-  border-color: #222222; }
+  border-color: #111111; }
 
 .bo-mdgry {
-  border-color: #999999; }
+  border-color: #888888; }
 
 .bo-ltgry {
   border-color: #eeeeee; }

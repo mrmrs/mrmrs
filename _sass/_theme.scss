@@ -5,10 +5,10 @@
 /* Color variables
    ========================================================================== */
 
-$dkgry: #222;
-$mdgry: #999;
+$dkgry: #111;
+$mdgry: #888;
 $ltgry: #eee;
-$link:  #0cf;
+$link:  #E8237E;
 
 // Add prime color
 
@@ -23,10 +23,14 @@ body {
 a {
   color: $link;
   text-decoration: none;
+  -webkit-transform:color .3s;
+  transform:color .3s;
 }
 
 a:hover {
   color: darken($link, 10%);
+  -webkit-transform:color .3s;
+  transform:color .3s;
 }
 
 
