@@ -676,13 +676,13 @@ body {
 a {
   color: #9cb5b4;
   text-decoration: none;
-  -webkit-transform: color .3s;
-  transform: color .3s; }
+  -webkit-transition: color .3s;
+  transition: color .3s; }
 
 a:hover {
   color: #7f9f9e;
-  -webkit-transform: color .3s;
-  transform: color .3s; }
+  -webkit-transition: color .3s;
+  transition: color .3s; }
 
 .dkgry {
   color: #111111; }
