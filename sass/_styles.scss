@@ -9,9 +9,16 @@ a:link {
   -webkit-transition: color .4s ease-in-out;
 }
 
-a:visited { color: #111; }
+a:visited {
+  color: #111;
+}
+
 a:hover {
   color: $deeppink;
   -webkit-transition: color .4s ease-in-out;
 }
 
+a:active {
+  color: $pink;
+  -webkit-transition: color .4s ease-in-out;
+}

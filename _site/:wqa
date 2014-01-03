@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      mrmrs • designer + developer in sf
+    </title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/i.css">
+  </head>
+  <body>
+  <header style="border-bottom: 1px solid white;">
+    <div class="ptl phl">
+      <h1 class="f1 f1-l mega-tracked mbn"><a href="/" title="Adam Morse" class="blk">MRMRS</a></h1>
+    <h2 class="fw1 f6 mtn">
+      Designer + Developer
+    </h2>
+    </div>
+    <p class="serif f4 pl mw-48">
+      I like designing with vim, unix, html, cats, fun people, css, js, cats, nice big monitors, pen and paper, and cats. <br><br>Trying to leave the web a little better than I found it.
+    </p>
+  </header>
+
+    <section class="pl">
+      <div class="pvm">
+        <a class="f1 f1-ns mega-l" href="http://mrsjxn.com" title="MRSJXN - Post Future Beats">MRSJXN</a>
+        <p class="f6 mn">Post-future beats with <a href="http://jxnblk.com" title="Jxnblk" class="ttu tracked">JxnBlk</a></p>
+      </div>
+      <div class="pvm">
+        <a href="http://prnt.cc" title="PRNT - Posters and other print work">PRNT</a>
+        <p class="f6 mn">Various print work.</p>
+      </div>
+      <div class="pvm">
+        <a href="http://mn-ml.cc" title="MNML - Light-weight Responsive HTML5 Boilerplate">MNML</a>
+        <p class="f6 mn">Light-weight html5 boilerplate.</p>
+      </div>
+      <div class="pvm">
+        <a href="http://nkd.cc" title="NKD - Minimal Responsive Jekyll Boilerplate">NKD</a>
+        <p>Bare bones boilerplate for Jekyll projects.</p>
+      </div>
+      <div class="pvm">
+      <a href="http://github.com/mrmrs/pesticide"
+      title="Pesticide - Faster css layout debuggins">Pesticide</a>
+      <p>Faster css layout debugging. </p>
+      </div>
+      <div class="pvm"><a href="http://github.com/mrmrs/css" title="CSS - An experiment in single purpose classes">CSS</a></div>
+      <div class="pvm"><a href="http://github.com/mrmrs/rprtr" title="RPRTR - CSS Visualizer">RPRTR</a></div>
+      <div class="pvm"><a href="http://gfffs.com" title="GFFFFS - HD Gifs for the super bored">GFFFS</a></div>
+      <div class="pvm"><a href="http://☠☣.ws/" title="blog">Writing</a></div>
+  </section>
+
+
+
+
+
+  <footer class="pl" style="border-top:1px solid #fff;">
+    <p class="tc">Product designer at <a href="http://salesforce.com" class="blk" title="Salesforce">Salesforce</a>.</p>
+  </footer>
+  </body>
+</html>
