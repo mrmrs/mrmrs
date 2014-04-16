@@ -30,25 +30,25 @@
 /*
  BORDER COLORS
  */
-.b-black { border-color: black; }
+.black { border-color: black; }
 
-.b-near-black { border-color: #111111; }
+.near-black { border-color: #111111; }
 
-.b-dark-gray { border-color: #333333; }
+.dark-gray { border-color: #333333; }
 
-.b-mid-gray { border-color: #666666; }
+.mid-gray { border-color: #666666; }
 
-.b-gray { border-color: #888888; }
+.gray { border-color: #888888; }
 
-.b-silver { border-color: #999999; }
+.silver { border-color: #999999; }
 
-.b-light-silver { border-color: #aaaaaa; }
+.light-silver { border-color: #aaaaaa; }
 
-.b-light-gray { border-color: #cccccc; }
+.light-gray { border-color: #cccccc; }
 
-.b-near-white { border-color: #eeeeee; }
+.near-white { border-color: #eeeeee; }
 
-.b-white { border-color: white; }
+.white { border-color: white; }
 
 .aqua { border-color: #7fdbff; }
 
@@ -392,15 +392,15 @@ img { max-width: 100%; }
  LINKS
 
 */
-.link { text-decoration: none; -webkit-transition: .4s color; transition: .4s color; }
+.link { text-decoration: none; -webkit-transition: .4s all; transition: .4s all; }
 
-.link:link { color: #30bbdb !important; }
+.link:link { color: #30BBDB; }
 
-.link:visited { color: #eeeeee !important; }
+.link:visited { color: #2D243B; }
 
-.link:hover { color: #dddddd !important; }
+.link:hover { color: #004EAB; }
 
-.link:active { color: #cccccc !important; }
+.link:active { color: #C4E3E0; }
 
 /*
  LISTS
@@ -782,6 +782,83 @@ table { border-collapse: collapse; border-spacing: 0; }
   .top-auto-l { top: auto; }
   .top-i-l { top: inherit; }
   .center-l { margin: 0 auto; } }
+/*
+ SKINS
+
+*/
+/* Grays */
+.blk { color: #111111; }
+
+.dk-gry { color: #333333; }
+
+.md-gry { color: #666666; }
+
+.gray { color: #888888; }
+
+.silver { color: #999999; }
+
+.lt-slvr { color: #aaaaaa; }
+
+.lt-gry { color: #cccccc; }
+
+.near-wht { color: #eeeeee; }
+
+.wht { color: white !important; }
+
+/* Text colors */
+.aqua { color: #7fdbff; }
+
+.blue { color: #0074d9; }
+
+.navy { color: #001f3f; }
+
+.teal { color: #39cccc; }
+
+.green { color: #2ecc40; }
+
+.olive { color: #3d9970; }
+
+.lime { color: #01ff70; }
+
+.yellow { color: #ffdc00; }
+
+.orange { color: #ff851b; }
+
+.red { color: #ff4136; }
+
+.fuchsia { color: #f012be; }
+
+.purple { color: #b10dc9; }
+
+.maroon { color: #85144b; }
+
+/* Background colors */
+.bg-aqua { background-color: #7fdbff; }
+
+.bg-blue { background-color: #0074d9; }
+
+.bg-navy { background-color: #001f3f; }
+
+.bg-teal { background-color: #39cccc; }
+
+.bg-green { background-color: #2ecc40; }
+
+.bg-olive { background-color: #3d9970; }
+
+.bg-lime { background-color: #01ff70; }
+
+.bg-yellow { background-color: #ffdc00; }
+
+.bg-orange { background-color: #ff851b; }
+
+.bg-red { background-color: #ff4136; }
+
+.bg-fuchsia { background-color: #f012be; }
+
+.bg-purple { background-color: #b10dc9; }
+
+.bg-maroon { background-color: #85144b; }
+
 /* SPACING
  An eight step powers of two scale ranging from 0 to 16rem.
  Legend:
@@ -1615,97 +1692,6 @@ table { border-collapse: collapse; border-spacing: 0; }
  Add custom styles here.
 
 */
-/*
- SKINS
 
-*/
-/* Grays */
-.black { color: #111111; }
-
-.dk-gray { color: #333333; }
-
-.md-gray { color: #666666; }
-
-.gray { color: #888888; }
-
-.silver { color: #999999; }
-
-.lt-silver { color: #aaaaaa; }
-
-.lt-gray { color: #cccccc; }
-
-.near-white { color: #eeeeee; }
-
-.white { color: white !important; }
-
-.bg-black { background-color: #111111; }
-
-.bg-dk-gray { background-color: #333333; }
-
-.bg-md-gray { background-color: #666666; }
-
-.bg-gray { background-color: #888888; }
-
-.bg-silver { background-color: #999999; }
-
-.bg-lt-silver { background-color: #aaaaaa; }
-
-.bg-lt-gray { background-color: #cccccc; }
-
-.bg-near-white { background-color: #eeeeee; }
-
-.bg-white { background-color: white !important; }
-
-/* Text colors */
-.aqua { color: #7fdbff; }
-
-.blue { color: #0074d9; }
-
-.navy { color: #001f3f; }
-
-.teal { color: #39cccc; }
-
-.green { color: #2ecc40; }
-
-.olive { color: #3d9970; }
-
-.lime { color: #01ff70; }
-
-.yellow { color: #ffdc00; }
-
-.orange { color: #ff851b; }
-
-.red { color: #ff4136; }
-
-.fuchsia { color: #f012be; }
-
-.purple { color: #b10dc9; }
-
-.maroon { color: #85144b; }
-
-/* Background colors */
-.bg-aqua { background-color: #7fdbff; }
-
-.bg-blue { background-color: #0074d9; }
-
-.bg-navy { background-color: #001f3f; }
-
-.bg-teal { background-color: #39cccc; }
-
-.bg-green { background-color: #2ecc40; }
-
-.bg-olive { background-color: #3d9970; }
-
-.bg-lime { background-color: #01ff70; }
-
-.bg-yellow { background-color: #ffdc00; }
-
-.bg-orange { background-color: #ff851b; }
-
-.bg-red { background-color: #ff4136; }
-
-.bg-fuchsia { background-color: #f012be; }
-
-.bg-purple { background-color: #b10dc9; }
-
-.bg-maroon { background-color: #85144b; }
+.bg-dark { background-color: #444; color: #eee; }
+body { font-family: 'Avenir next', 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif; }

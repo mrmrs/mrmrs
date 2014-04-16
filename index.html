@@ -8,78 +8,148 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-    <link rel="stylesheet" href="css/i.css">
+    <link rel="stylesheet" href="css/tachyons.css">
   </head>
   <body>
-    <header style="border-bottom: 1px solid white;">
-      <div class="ptl phl">
-        <h1 class="f1 f1-l mega-tracked mbn"><a href="/" title="Adam Morse" class="blk">MRMRS</a></h1>
-        <h2 class="fw1 f6 mtn">
-          Designer + Developer in SF
-        </h2>
-      </div>
-      <p class="serif f2 pl mw-32">
-        I like designing with vim, unix, html, cats, fun people, css, js, cats, nice big monitors, pen and paper, and cats.
-        <br><br>
-        Trying to leave the web a little better than I found it.
-      </p>
+    <header class="pvx tc">
+      <!--<img src="img/skullcat-128.png" width="64" height="64">-->
+<!--
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="128" height="128">
+  <path fill="#333" d=" M2 0 C4 0 10 5 10 5 C13 4 15 4 16 4 C17 4 18 4 22 5 C22 5 28 0 30 0 C31 0 32 10 32 16 C32 26 24 30 16 30 C8 30 0 26 0 16 C0 10 1 0 2 0 "/>
+  <path fill="#fff" d="M16 7 C13 7 2 9 2 16 C2 23 6 23 10 24 L11 28 L12 26 L20 26 L21 28 L22 24 C26 23 30 23 30 16 C30 9 19 7 16 7 M4 18 A4 4 0 0 1 12 18 A4 4 0 0 1 4 18 M20 18 A4 4 0 0 1 28 18 A4 4 0 0 1 20 18 "/>
+</svg>
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="128" height="128">
+  <path fill="#333" d="M16 7 C13 7 2 9 2 16 C2 23 6 23 10 24 L11 28 L12 26 L20 26 L21 28 L22 24 C26 23 30 23 30 16 C30 9 19 7 16 7 M4 18 A4 4 0 0 1 12 18 A4 4 0 0 1 4 18 M20 18 A4 4 0 0 1 28 18 A4 4 0 0 1 20 18 "/>
+</svg>
+
+      <h1 class="white ttu fw4 f6 f3-ns mtl white">Write code. Drop beats.</h1>
     </header>
-    <main class="pl">
-      <div class="pvm">
-        <a class="f1 f1-ns tracked mega-l blk" href="http://mrsjxn.com" title="MRSJXN - Post Future Beats">MRSJXN</a>
-        <p class="f6 f2-ns serif mn">Post-future beats with <a href="http://jxnblk.com" title="Jxnblk" class="ttu blk tracked">JxnBlk</a></p>
+    <main class="pam phx-ns">
+      <section>
+      <h1 class="ttu fw4 f6 mbl dark-gray">Open source</h1>
+      <div class="pvs">
+        <a href="http://clrs.cc" class="f1 f1-ns mega-l tracked blk fw9 link" title="CLRS: Better colors for the web">COLORS</a>
+        <p class="f5 f3-ns mtn">A nicer color palette for the web.</p>
       </div>
-      <div class="pvm">
-        <a href="http://clrs.cc" class="f1 f1-ns mega-l blk tracked" title="CLRS: Better colors for the web">COLORS</a>
-        <p class="f6 f2-ns serif mn">A nicer color palette for the web.</p>
-      </div>
-      <div class="pvm">
-        <a class="f1 f1-ns mega-l ttu tracked blk" href="http://pesticide.io"
+      <div class="pvs">
+        <a class="f1 f1-ns mega-l ttu tracked link fw9" href="http://pesticide.io"
           title="Pesticide - Faster css layout debugging">Pesticide</a>
-        <p class="f6 f2-ns serif mn">Faster css layout debugging. </p>
+        <p class="f5 f3-ns  mtn">Faster css layout debugging.</p>
       </div>
-      <div class="pvm">
-        <a class="f1 f1-ns mega-l ttu tracked blk" href="http://fluidity.sexy"
+      <div class="pvs">
+        <a class="f1 f1-ns mega-l ttu tracked link fw9 " href="http://fluidity.sexy"
           title="Fluidity - a css module that makes html a little more responsive out of the box">Fluidity</a>
-        <p class="f6 f2-ns serif mn">HTML is almost responsive out of the box. <br class="dn db-ns">These 115 bytes of css should help fix the almost part.</p>
+        <p class="f5 f3-ns mtn">A css shim to make html a bit more responsive out of the box.</p>
       </div>
-      <div class="pvm">
-        <a href="http://mn-ml.cc" class="f1 f1-ns mega-l blk tracked" title="MNML - Light-weight Responsive HTML5 Boilerplate">MNML</a>
-        <p class="f6 f2-ns serif mn">Light-weight html5 boilerplate.</p>
+      <h2 class="ttu fw4 f6 mbl mtx dk-gray">Templates for rapid prototyping</h2>
+      <div class="pvs">
+        <a href="http://mn-ml.cc" class="f1 f1-ns mega-l blk fw9 tracked link " title="MNML - Light-weight Responsive HTML5 Boilerplate">MNML</a>
+        <p class="f5 f3-ns  mtn">Light-weight html5 boilerplate.</p>
       </div>
-      <div class="pvm">
-        <a href="http://nkd.cc" class="f1 f1-ns mega-l blk tracked" title="NKD - Minimal Responsive Jekyll Boilerplate">NKD</a>
-        <p class="f6 f2-ns serif mn">Bare bones boilerplate for Jekyll projects.</p>
+      <div class="pvs">
+        <a href="http://nkd.cc" class="f1 f1-ns mega-l fw9 blk tracked link" title="NKD - Minimal Responsive Jekyll Boilerplate">NKD</a>
+        <p class="f5 f3-ns  mtn">Bare bones boilerplate for Jekyll projects.</p>
       </div>
-      <div class="pvm">
-        <a href="http://www.cssstats.com" class="f1 f1-ns mega-l blk tracked" title="CSS STATS - CSS Visualizer">CSS STATS</a>
-        <p class="f6 f2-ns serif mn">CSS visualizer.</p>
+      <div class="pvs">
+        <a href="http://github.com/mrmrs/trim" class="f1 f1-ns mega-l fw9 blk tracked link" title="TRIM">TRIM</a>
+        <p class="f5 f3-ns  mtn">A series of automations for boring but necessary front-end tasks. </p>
       </div>
-      <div class="pvm">
-        <a class="f1 f1-ns mega-l blk tracked" href="http://github.com/mrmrs/css-uncut" title="CSS UNCUT - An experiment in single purpose classes">CSS Uncut</a>
-        <p class="f6 f2-ns serif mn">An experiment with single purpose classes.</p>
+      <div class="pvs">
+        <a href="http://www.cssstats.com" class="f1 f1-ns mega-l blk tracked ttu link fw9" title="CSS STATS - CSS Visualizer">CSS STATS</a>
+        <p class="f5 f3-ns  mtn">Generate visualizations for your css. Helps identify where to start refactoring.</p>
       </div>
-      <div class="pvm">
-        <a class="f1 f1-ns tracked blk mega-l" href="http://prnt.cc" title="PRNT - Posters and other print work">PRNT</a>
-        <p class="f6 f2-ns serif mn">Various print work.</p>
+      <div class="pvs">
+        <a class="f1 f1-ns mega-l blk tracked ttu fw9 blk link blk" href="http://github.com/mrmrs/css-uncut" title="CSS UNCUT - An experiment in single purpose classes">CSS Uncut</a>
+        <p class="f5 f3-ns mtn">An experiment with single purpose classes.</p>
       </div>
-      <div class="pvm">
-        <a class="blk f1 f1-ns mega-l tracked" href="http://gfffs.com" title="GFFFFS - HD Gifs for the super bored">GFFFS</a>
-        <p class="f6 f2-ns serif mn">
+    </section>
+    <section>
+      <h2 class="ttu fw4 f6 mbl mtx">Projects</h2>
+      <div class="pvs">
+        <a class="f1 f1-ns tracked blk mega-l link fw9" href="http://prnt.cc" title="PRNT - Posters and other print work">PRNT</a>
+        <p class="f5 f2-ns  mtn">Various print work.</p>
+      </div>
+      <div class="pvs">
+        <a class="blk f1 f1-ns mega-l tracked link fw9" href="http://gfffs.com" title="GFFFFS - HD Gifs for the super bored">GFFFS</a>
+        <p class="f5 f2-ns  mtn">
           High-def animated gifs for the super-bored.
         </p>
       </div>
-      <div class="pvm">
+      <div class="pvs">
+        <a class="blk f1 f1-ns mega-l tracked link fw9" href="http://☠☣.ws/" title="">WRITING</a>
+        <p class="f5 f2-ns  mtn">
+          Thoughts on design, vim, and css.
+        </p>
+      </div>
+
+    </section>
+    </main>
+
+
+
+
+
+
+    <main class="pl dn">
+      <div class="pvs">
+        <a class="f1 f1-ns tracked mega-l blk" href="http://mrsjxn.com" title="MRSJXN - Post Future Beats">MRSJXN</a>
+        <p class="f5 f2-ns  mn">Post-future beats with <a href="http://jxnblk.com" title="Jxnblk" class="ttu blk tracked">JxnBlk</a></p>
+      </div>
+      <div class="pvs">
+        <a href="http://clrs.cc" class="f1 f1-ns mega-l blk tracked" title="CLRS: Better colors for the web">COLORS</a>
+        <p class="f5 f2-ns  mn">A nicer color palette for the web.</p>
+      </div>
+      <div class="pvs">
+        <a class="f1 f1-ns mega-l ttu tracked blk" href="http://pesticide.io"
+          title="Pesticide - Faster css layout debugging">Pesticide</a>
+        <p class="f5 f2-ns  mn">Faster css layout debugging. </p>
+      </div>
+      <div class="pvs">
+        <a class="f1 f1-ns mega-l ttu tracked blk" href="http://fluidity.sexy"
+          title="Fluidity - a css module that makes html a little more responsive out of the box">Fluidity</a>
+        <p class="f5 f2-ns  mn">HTML is almost responsive out of the box. <br class="dn db-ns">These 115 bytes of css should help fix the almost part.</p>
+      </div>
+      <div class="pvs">
+        <a href="http://mn-ml.cc" class="f1 f1-ns mega-l ttu tracked blk" title="MNML - Light-weight Responsive HTML5 Boilerplate">MNML</a>
+        <p class="f5 f2-ns  mn">Light-weight html5 boilerplate.</p>
+      </div>
+      <div class="pvs">
+        <a href="http://nkd.cc" class="f1 f1-ns mega-l blk tracked link" title="NKD - Minimal Responsive Jekyll Boilerplate">NKD</a>
+        <p class="f5 f2-ns  mn">Bare bones boilerplate for Jekyll projects.</p>
+      </div>
+      <div class="pvs">
+        <a href="http://github.com/mrmrs/trim" class="f1 f1-ns mega-l blk tracked link" title="Gulp based front-end dev workflow">Trim</a>
+        <p class="f5 f2-ns  mn">Bare bones boilerplate for Jekyll projects.</p>
+      </div>
+      <div class="pvs">
+        <a href="http://www.cssstats.com" class="f1 f1-ns mega-l blk tracked" title="CSS STATS - CSS Visualizer">CSS STATS</a>
+        <p class="f5 f2-ns  mn">CSS visualizer.</p>
+      </div>
+      <div class="pvs">
+        <a class="f1 f1-ns mega-l blk tracked" href="http://github.com/mrmrs/css-uncut" title="CSS UNCUT - An experiment in single purpose classes">CSS Uncut</a>
+        <p class="f5 f2-ns  mn">An experiment with single purpose classes.</p>
+      </div>
+      <div class="pvs">
+        <a class="f1 f1-ns tracked blk mega-l" href="http://prnt.cc" title="PRNT - Posters and other print work">PRNT</a>
+        <p class="f5 f2-ns  mn">Various print work.</p>
+      </div>
+      <div class="pvs">
+        <a class="blk f1 f1-ns mega-l tracked" href="http://gfffs.com" title="GFFFFS - HD Gifs for the super bored">GFFFS</a>
+        <p class="f5 f2-ns  mn">
+          High-def animated gifs for the super-bored.
+        </p>
+      </div>
+      <div class="pvs">
         <a class="blk f1 f1-ns mega-l tracked" href="http://☠☣.ws/" title="">WRITING</a>
-        <p class="f6 f2-ns serif mn">
+        <p class="f5 f2-ns  mn">
           Thoughts on design, vim, and css.
         </p>
       </div>
     </main>
-    <footer class="pl tc" style="border-top:1px solid #fff;">
-      <p class="f6 f5-ns">Product designer at <a href="http://salesforce.com" class="blk" title="Salesforce">Salesforce</a>.</p>
-      <ul class="pln list list--h f6">
+    <footer class="pl tc dn">
+      <p class="f5 f5-ns">Product designer at <a href="http://salesforce.com" class="blk" title="Salesforce">Salesforce</a>.</p>
+      <ul class="pln list list--h f5">
         <li class="pm twitter">
           <a class="small blk fw1" href="http://twitter.com/mrmrs_" title="Follow on Twitter">@mrmrs_</a>
         </li>

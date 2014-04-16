@@ -1,6 +1,8 @@
-/* ==========================================================================
+/*
+
    CLEARS
-   ========================================================================== */
+
+*/
 
 .cn { clear: none; }
 .cl { clear: left; }
@@ -11,36 +13,7 @@
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
+.cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf {       *zoom: 1; }
 
-.cf:after {
-    clear: both;
-}
-
-.cf {
-    *zoom: 1;
-}
-
-@include break(not-small) {
-  .cn-ns { clear: none; }
-  .cl-ns { clear: left; }
-  .cr-ns { clear: right; }
-  .cb-ns { clear: both; }
-}
-
-@include break(medium) {
-  .cn-m { clear: none; }
-  .cl-m { clear: left; }
-  .cr-m { clear: right; }
-  .cb-m { clear: both; }
-}
-
-@include break(large) {
-  .cn-l { clear: none; }
-  .cl-l { clear: left; }
-  .cr-l { clear: right; }
-  .cb-l { clear: both; }
-}

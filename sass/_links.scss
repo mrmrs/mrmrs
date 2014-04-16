@@ -1,20 +1,17 @@
-/* ==========================================================================
+/*
+
    LINKS
-   ========================================================================== */
 
-.link { text-decoration: none; }
+*/
 
-a:hover {
-  color: cyan;
-  -webkit-transition: color .4s ease-in-out;
+.link {
+  text-decoration: none;
+  transition: .4s color;
 }
 
-a:visited {
-  color: #111;
-}
+.link:link    { color: #30BBDB!important; }
+.link:visited { color: #eee!important; }
+.link:hover   { color: #ddd!important; }
+.link:active  { color: #ccc!important; }
 
-a:active {
-  color: darkcyan;
-  -webkit-transition: color .4s ease-in-out;
-}
 

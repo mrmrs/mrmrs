@@ -1,30 +1,36 @@
-/* ==========================================================================
+/*
+
    LISTS
-   ========================================================================== */
 
-/* List Style Types */
+*/
 
-.disc {         list-style-type: disc; }
-.circle {       list-style-type: circle; }
-.square {       list-style-type: square; }
-.decimal {      list-style-type: decimal; }
-.leading-zero { list-style-type: decimal-leading-zero; }
-.lower-roman {  list-style-type: lower-roman; }
-.upper-roman {  list-style-type: upper-roman; }
-.lower-greek {  list-style-type: lower-greek; }
-.lower-latin {  list-style-type: lower-latin; }
-.upper-latin {  list-style-type: upper-latin; }
-.lower-alpha {  list-style-type: lower-alpha; }
-.upper-alpha {  list-style-type: upper-alpha; }
 .list {         list-style-type: none; }
 
-
-/* Horizontal list: can be used on ol or ul */
-
-.list {         list-style: none; }
-
 .list--h {
-                list-style-type: none;
-        li {    display: inline-block; }
-
+   list-style-type: none;
+   .list--h-item {   display: inline-block; }
 }
+
+@include break(not-small) {
+  .list--h-ns {
+                list-style-type: none;
+    .list--h-item-ns {   display: inline-block; }
+  }
+}
+
+@include break(medium) {
+  .list-m {         list-style: none; }
+  .list--h-m {
+             list-style-type: none;
+             .list--h-item {   display: inline-block; }
+  }
+}
+
+@include break(large) {
+  .list-l {         list-style-type: none; }
+  .list--h-l {
+      list-style-type: none;
+     .list--h-item {   display: inline-block; }
+  }
+}
+
