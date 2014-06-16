@@ -1,3 +1,4 @@
+@import "normalize";
 @import "queries";
 @import "colors";
 
@@ -21,9 +22,9 @@
 @import "links";
 @import "lists";
 @import "max_widths";
-@import "normalize";
 @import "overflow";
 @import "position";
+@import "skins";
 @import "spacing";
 @import "text_decoration";
 @import "text_align";
@@ -35,6 +36,6 @@
 @import "widths";
 @import "word_spacing";
 @import "styles";
+@import "vertical_align";
 
-@import "skins";
 @import "debug";
