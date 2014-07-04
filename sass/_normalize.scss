@@ -403,3 +403,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+article, div, section, header, footer, main { 
+  box-sizing: border-box;
+}
