@@ -82,18 +82,13 @@ gulp.task('pre-process', function(){
     gulp.src('./sass/i.scss')
         .pipe(sass())
         .pipe(prefix())
-        //.pipe(uncss({ html: ['index.html'] }))
         .pipe(size({gzip: true, showFiles: true, title:'uncompiled'}))
         .pipe(gulp.dest('css'))
-        //.pipe(minifyCSS())
-        //.pipe(size({gzip: true, showFiles: true, title:'pre uncss'}))
-        //.pipe(rename('i.min.css'))
-        //.pipe(gulp.dest('css'))
         .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('uncss', function(){
-    return gulp.src('./css/i.css')
+    gulp.src('./css/i.css')
         .pipe(size({gzip: true, showFiles: true, title:'pre uncss'}))
         .pipe(uncss({ html: ['index.html'], ignore: ['svg', ':hover', ':visited', ':link', ':visited'] }))
         .pipe(minifyCSS())
@@ -127,9 +122,9 @@ gulp.task('bs-reload', function () {
 */
 gulp.task('default', ['pre-process', 'minify-css', 'bs-reload', 'browser-sync'], function(){
   gulp.start('pre-process', 'csslint');
-  gulp.watch('js/app.js', ['js-hint', 'js-min']);
+  gulp.watch('js/app.js', ['js-hint']);
   gulp.watch('sass/*.scss', ['pre-process']);
-  gulp.watch('css/i.css', ['bs-reload']);
-  gulp.watch('*.html', ['bs-reload']);
+  gulp.watch('css/i.css', ['uncss', 'bs-reload']);
+  gulp.watch('*.html', ['uncss', 'bs-reload']);
 });
 
