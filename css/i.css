@@ -1354,7 +1354,7 @@ img {
 .of-vis {
   overflow: visible; }
 
-.of-hid {
+.of-hid, .oh {
   overflow: hidden; }
 
 .of-scr {
@@ -1752,6 +1752,72 @@ img {
 
 .bg-maroon {
   background-color: #85144B; }
+
+.svg-black {
+  fill: #111; }
+
+.svg-dk-gray {
+  fill: #333; }
+
+.svg-md-gray {
+  fill: #666; }
+
+.svg-gray {
+  fill: #888; }
+
+.svg-silver {
+  fill: #999; }
+
+.svg-lt-silver {
+  fill: #aaa; }
+
+.svg-lt-gray {
+  fill: #ccc; }
+
+.svg-near-white {
+  fill: #eee; }
+
+.svg-white {
+  fill: #fff !important; }
+
+.svg-aqua {
+  fill: #7FDBFF; }
+
+.svg-blue {
+  fill: #0074D9; }
+
+.svg-navy {
+  fill: #001F3F; }
+
+.svg-teal {
+  fill: #39CCCC; }
+
+.svg-green {
+  fill: #2ECC40; }
+
+.svg-olive {
+  fill: #3D9970; }
+
+.svg-lime {
+  fill: #01FF70; }
+
+.svg-yellow {
+  fill: #FFDC00; }
+
+.svg-orange {
+  fill: #FF851B; }
+
+.svg-red {
+  fill: #FF4136; }
+
+.svg-fuchsia {
+  fill: #F012BE; }
+
+.svg-purple {
+  fill: #B10DC9; }
+
+.svg-maroon {
+  fill: #85144B; }
 
 /*
    SPACING

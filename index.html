@@ -9,80 +9,82 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/i.min.css">
-   <style>#waves svg {position:absolute;top:62%;left:0;bottom:0;right:0;z-index:1!important;}.line{fill:none;stroke:#ddd;stroke-width:2px;}.axis path,.axis line{fill:none;stroke:#fff;shape-rendering:crispEdges;}</style>
+    <style>#waves svg {position:absolute;top:62%;left:0;bottom:0;right:0;z-index:1!important;}.line{fill:none;stroke:#ddd;stroke-width:2px;}.axis path,.axis line{fill:none;stroke:#fff;shape-rendering:crispEdges;}
+      .skullcat { opacity: 0.8; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; width: 100%; }  
+    </style>
+  
   </head>
   <body>
-    <header class="tc pas pax-ns cf bb b--near-white">
+    <header class="tc tl-ns pvx phm paxl-ns bb b--near-white black oh pos-rel" style="background:url(img/header-sky.jpg) no-repeat center bottom; background-size: cover;">
       <!--
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="128" height="128">
-        <path fill="#333" d="M16 7 C13 7 2 9 2 16 C2 23 6 23 10 24 L11 28 L12 26 L20 26 L21 28 L22 24 C26 23 30 23 30 16 C30 9 19 7 16 7 M4 18 A4 4 0 0 1 12 18 A4 4 0 0 1 4 18 M20 18 A4 4 0 0 1 28 18 A4 4 0 0 1 20 18 "/>
-      </svg>
+      <div class="fl mrl dn">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" class="dn svg-white">
+          <path d="M16 7 C13 7 2 9 2 16 C2 23 6 23 10 24 L11 28 L12 26 L20 26 L21 28 L22 24 C26 23 30 23 30 16 C30 9 19 7 16 7 M4 18 A4 4 0 0 1 12 18 A4 4 0 0 1 4 18 M20 18 A4 4 0 0 1 28 18 A4 4 0 0 1 20 18 "/>
+        </svg>
+      </div>
       -->
-      <div>
-        <div class="fl-ns mrx-ns mw3 mw5-ns">
-          <!--
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="128" height="128" style="width:100%;">
-            <path fill="#000000" d=" M2 0 C4 0 10 5 10 5 C13 4 15 4 16 4 C17 4 18 4 22 5 C22 5 28 0 30 0 C31 0 32 10 32 16 C32 26 24 30 16 30 C8 30 0 26 0 16 C0 10 1 0 2 0 "/>
-            <path fill="#ffffff" d="M16 7 C13 7 2 9 2 16 C2 23 6 23 10 24 L11 28 L12 26 L20 26 L21 28 L22 24 C26 23 30 23 30 16 C30 9 19 7 16 7 M4 18 A4 4 0 0 1 12 18 A4 4 0 0 1 4 18 M20 18 A4 4 0 0 1 28 18 A4 4 0 0 1 20 18 "/>
+          <h1 class="fw9 ttu f3 f2-ns prm mbn dib db-ns">Adam Morse</h1>
+          <h2 class="fw4 f3 ttu dib db-ns">Designer</h2>
+          <div class=" pam skullcat dn" style="background: url(img/skullcat.png) no-repeat center center;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="256" height="256" class="">
+            <path fill="#fff" d="M16 7 C13 7 2 9 2 16 C2 23 6 23 10 24 L11 28 L12 26 L20 26 L21 28 L22 24 C26 23 30 23 30 16 C30 9 19 7 16 7 M4 18 A4 4 0 0 1 12 18 A4 4 0 0 1 4 18 M20 18 A4 4 0 0 1 28 18 A4 4 0 0 1 20 18 "/>
           </svg>
-          -->
-        </div>
-        <div class="tl-ns pvs">
-          <h1 class="fw9 ttu f3">Adam Morse</h1>
-          <h2 class="serif fw4 f4">Designer</h2>
-        </div>
       </div>
     </header>
     <main>
       <header>
-        <div class="pam pax-ns bb b--near-white">
+        <div class="phm pvx paxl-ns bb b--near-white">
         <p class="serif f3 f2-m f1-l lh-copy">
-        I think everything on the web should be: fast, readable, responsive, and easy to navigate.
+          I think the web should be: as fast as possible, highly readable, 100% responsive, and easy to navigate.
+        </p>
+        <p class="serif f4 f2-ns mw7 lh-copy">
+          Advocate for users and open-source. Trying to leave the web a little better than I found it.
         </p>
       </div>
       </header>
-      <section class="pam pax-l cf">
-        <h1 class="ttu serif fw1 pbs pbl-ns">Work</h1>
-        <div class="prxs prm-ns pls-m wi-100 wi-50-ns fl mbm">
+      <section class="pvs phm pax-m paxl-l cf">
+        <h1 class="ttu serif fw1 pbs pbl-ns">Featured Work</h1>
+        <div class="prxs prs-ns wi-100 wi-50-ns fl mbm">
           <div class="pal pax-l pulsate-bg br2">
             <a href="http://clrs.cc" 
-              class="f2 mega-ns link b pulsate-bg ttu"
+              class="f2 f1-l link b pulsate-bg ttu"
               title="Better default colors for the web">colors</a>
-            <p class="man lh-copy serif-calisto f4 md-gray fw4 pulsate-bg">
+            <p class="man lh-copy serif-calisto f5 md-gray fw4 pulsate-bg">
               A nicer color palette for the web. 
               <small class="db">389 bytes of css</small>
             </p>
           </div>
         </div>
-        <div class="prxs pls-m wi-100 wi-50-ns fl mbm">
+        <div class="plxs pls-ns wi-100 wi-50-ns fl mbm">
           <div class="pal pax-l br2 shimmer-bg silver" id="waves" style="overflow: hidden; position:relative;">
           <a href="http://mrmrs.io/waves" 
-            class="f2 mega-ns link b ttu z5 silver"
+            class="f2 f1-l link b ttu z5 silver"
             title="Random animated data visualizations for the super-bored">waves</a>
-          <p class="man lh-copy serif-calisto f4 silver fw4 z5"
+          <p class="man lh-copy serif-calisto f5 silver fw4 z5"
             style="position: relative;">
             Animated generative art.
             <small class="db">d3.js, soundcloud api</small>
           </p>
           </div>
         </div>
-        <div class="prxs prm-ns pls-m wi-100 wi-50-ns fl mbm">
+        <div class="prxs prs-ns wi-100 wi-50-ns fl mbs">
           <div class="pal pax-l br2" style="background:url(https://s3-us-west-2.amazonaws.com/prnt/adam-stern-031209_960-2.jpg) no-repeat 0 0;background-size: cover;">
           <a href="http://prnt.cc" 
-            class="f2 mega-ns link b ttu white"
+            class="f2 f1-l link b ttu white"
             title="Print design portfolio">prnt</a>
-          <p class="man lh-copy serif-calisto f4 white fw4">
+          <p class="man lh-copy serif-calisto f5 white fw4">
             Various print work.
             <small class="db">photography, typography</small>
           </p>
           </div>
         </div>
-        <div class="prxs pls-m wi-100 wi-50-ns fl mbm">
+        <div class="plxs pls-ns wi-100 wi-50-ns fl mbs">
           <div class="pal pax-l br2" style="background:url(https://s3-us-west-1.amazonaws.com/gfffs/diamonds-2.gif) no-repeat center center; background-size: cover;">
           <a href="http://gfffs.com" 
-            class="f2 mega-ns link b  ttu white"
+            class="f2 f1-l link b  ttu white"
             title="Random animated data visualizations for the super-bored"><span class="bg-black">gfffs</span></a>
-          <p class="man lh-copy serif-calisto f4 white fw4">
+          <p class="man lh-copy serif-calisto f5 white fw4">
             <span class="bg-black">Hi-def gifs for the super-bored.</span>
             <small class="db"><span class="bg-black">photography, animation</span></small>
           </p>
@@ -90,14 +92,14 @@
         </div>
       </section>
 
-      <section class="bt b--near-white pam pax-ns">
+      <section class="bt b--near-white pvs phm pax-m phxl-l pvx-l">
         <h2 class="serif fw4 f6 f3-m f3-l ttu pbm">Open Source</h2>
         <h3 class="serif fw4 f6 f6-m f6-l ttu mtm mtx-l">cascading stylesheets</h3>
         <div class="pvm">
           <a href="http://cssstats.com" 
             class="f2 mega-ns link b"
             title="Visualize your css">css stats</a>
-          <p class="man lh-copy serif-calisto f4 md-gray fw4">
+          <p class="man lh-copy serif-calisto f4 md-gray fw4 mw7">
             Parses css to build a rudimentary styleguide as well as give heuristic stats
             on your code-base and highlights areas that could benefit from abstractions.
           </p>
@@ -164,9 +166,19 @@
           </p>
         </div>
         <h3 class="serif fw4 f6 f6-m f6-l ttu mtm mtx-l">Prototyping templates</h3>
+        <div class="pvm"><a class="f2 mega-ns link b" href="http://github.com/mrmrs/mnml">mnml</a>
+          <p class="man lh-copy serif-calisto f4 md-gray fw4">
+            Minimal template to design in the browser with html &amp; sass.
+          </p>
+        </div>
+        <div class="pvm"><a class="f2 mega-ns link b" href="http://github.com/mrmrs/trim">trim</a>
+          <p class="man lh-copy serif-calisto f4 md-gray fw4">
+            Prototype setup to build light-weight, more performant websites. 
+          </p>
+        </div>
         <div class="pvm">
           <a class="f2 mega-ns link b" href="http://github.com/mrmrs/html">html</a>
-          <p class="man lh-copy f4 md-gray fw4">
+          <p class="man lh-copy serif-calisto f4 md-gray fw4">
             Every html element from the spec - on one page. Useful as a base to starting a css framework from scratch.
           </p>
         </div>
@@ -176,38 +188,25 @@
             Every html element from the spec - on one page. Useful as a base to starting a css framework from scratch.
           </p>
         </div>
-        <div class="pvm"><a class="f2 mega-ns link b" href="http://github.com/mrmrs/trim">trim</a>
-          <p class="man lh-copy serif-calisto f4 md-gray fw4">
-            Prototype setup to build light-weight, more performant websites. 
-          </p>
-        </div>
-        <div class="pvm"><a class="f2 mega-ns link b" href="http://github.com/mrmrs/mnml">mnml</a>
-          <p class="man lh-copy serif-calisto f4 md-gray fw4">
-            Minimal template to design in the browser with html &amp; sass.
-          </p>
-        </div>
         <h3 class="serif fw4 f6 f6-m f6-l">css modules on npm</h3>
       </section>
 
 
 
 
-      <section class="bt b--near-white pam pax-ns">
+      <section class="bt b--near-white pvs phm pax-m phxl-l pvx-l">
         <h2 class="serif fw4 f6 f3-m f3-l ttu">Fun</h2>
         <div>
-          <a href="http://mrsjxn.com/" title="mrsjxn"    class="f2 mega-ns link b">mrsjxn.com</a>
+          <a href="http://mrmrs.io/gifolio" title="gifolio"    class="f2 mega-ns link b">gifolio</a>
         </div>
         <div>
-          <a href="http://mrmrs.io/beats" title="mrsjxn" class="f2 mega-ns link b">mrmrs.io/beats</a>
+          <a href="http://mrsjxn.com/" title="mrsjxn"    class="f2 mega-ns link b">mrsjxn</a>
         </div>
         <div>
-          <a href="http://prnt.cc" title="Print work" class="link b f2 mega-ns">prnt.cc</a> 
-        </div>
-        <div>
-          <a href="http://gfffs.com" title="Print work" class="link b f2 mega-ns">gfffs.com</a> 
+          <a href="http://mrmrs.io/beats" title="mrsjxn" class="f2 mega-ns link b">mrmrs beats</a>
         </div>
       </section>
-      <section class="bt b--near-white pam pax-ns">
+      <section class="bt b--near-white pvs phm pax-m phxl-l pvx-l">
         <h2 class="serif fw4 f3 f3-m f3-l ttu">Writing</h2>
         <a href="https://hackdesign.org/lessons/49" class="link f4 f2-ns">Hack Design: Vim as a Design Tool</a>
         <p class="f3 lh-copy serif-calisto mw6">
@@ -215,14 +214,14 @@
           <a href="https://hackdesign.org/lessons/49" class="db link small mtm" title="Hack Design: Vim as a Design Tool">Read more >></a>
         </p>
       </section>
-      <section class="bt b--near-white pam pax-ns">
+      <section class="bt b--near-white pvs phm pax-m phxl-l pvx-l">
         <h2 class="serif fw4 f3 f3-m f3-l ttu">Videos</h2>
         <a href="https://vimeo.com/82533244" class="link f4 f2-ns" title="vim project setup">Vim project setup</a><br>
         <a href="https://vimeo.com/93470293" class="link f4 f2-ns" title="vim and svg">Editing svg with vim</a><br>
         <a href="https://vimeo.com/90278867" class="link f4 f2-ns" title="Editing output from an external process">Editing output from an external process in vim</a><br>
       </section>
     </main>
-    <footer class="bt b--near-white pam pax-ns">
+    <footer class="bt b--near-white pvx phm pax-m phxl-l pvx-l">
       <a href="mailto:hi@mrmrs.cc" class="link serif black">hi@mrmrs.cc</a>
     </footer>
     <script src="all.js"></script>
