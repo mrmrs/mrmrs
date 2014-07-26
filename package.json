@@ -39,5 +39,8 @@
     "gulp-watch": "^0.6.8",
     "imagemin-pngcrush": "^0.1.0",
     "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "start": "gulp"
   }
 }
