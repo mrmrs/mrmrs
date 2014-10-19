@@ -42,6 +42,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "images": "gulp img-minify"
+    "images": "gulp img-minify",
+    "minify-js": "gulp js-min"
   }
 }
