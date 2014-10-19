@@ -1,4 +1,3 @@
-
 // Gulp tasks for TRIM
 
 // Load plugins 
@@ -62,7 +61,7 @@ gulp.task('js-min', function() {
   gulp.src('all.js')
     .pipe(jsmin())
     .pipe(rename('all.min.js'))
-    .pipe(gulp.dest('js'));
+    .pipe(gulp.dest('./'));
 });
 
 // Use csslint without box-sizing or compatible vendor prefixes (these
