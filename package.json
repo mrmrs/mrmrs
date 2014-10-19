@@ -41,6 +41,7 @@
     "jshint-stylish": "^0.2.0"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "images": "gulp img-minify"
   }
 }

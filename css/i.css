@@ -105,8 +105,7 @@ dfn {
  */
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0; }
 
 /**
@@ -254,9 +253,8 @@ button[disabled], html input[disabled] {
  * 2. Remove excess padding in IE 8/9.
  */
 input[type="checkbox"], input[type="radio"] {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -270,7 +268,6 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -309,9 +306,8 @@ table {
   border-spacing: 0; }
 
 article, div, section, header, footer, main {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
 
 /*
 
@@ -338,49 +334,37 @@ article, div, section, header, footer, main {
 
 */
 .bg-cv {
-  -webkit-background-size: cover;
-          background-size: cover; }
+  background-size: cover; }
 
 .bg-cn {
-  -webkit-background-size: contain;
-          background-size: contain; }
+  background-size: contain; }
 
 .bg-auto {
-  -webkit-background-size: auto auto;
-          background-size: auto; }
+  background-size: auto; }
 
 @media screen and (min-width: 48em) {
   .bg-cv-ns {
-    -webkit-background-size: cover;
-            background-size: cover; }
+    background-size: cover; }
   .bg-cn-ns {
-    -webkit-background-size: contain;
-            background-size: contain; }
+    background-size: contain; }
   .bg-auto-ns {
-    -webkit-background-size: auto auto;
-            background-size: auto; } }
+    background-size: auto; } }
 
 @media screen and (min-width: 48em) and (max-width: 64em) {
   .bg-cv-m {
-    -webkit-background-size: cover;
-            background-size: cover; }
+    background-size: cover; }
   .bg-cn-m {
-    -webkit-background-size: contain;
-            background-size: contain; }
+    background-size: contain; }
   .bg-auto-m {
-    -webkit-background-size: auto auto;
-            background-size: auto; } }
+    background-size: auto; } }
 
 @media screen and (min-width: 64em) {
   .bg-cv-l {
-    -webkit-background-size: cover;
-            background-size: cover; }
+    background-size: cover; }
   .bg-cn-l {
-    -webkit-background-size: contain;
-            background-size: contain; }
+    background-size: contain; }
   .bg-auto-l {
-    -webkit-background-size: auto auto;
-            background-size: auto; } }
+    background-size: auto; } }
 
 /*
 

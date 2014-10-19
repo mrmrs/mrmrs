@@ -31,14 +31,15 @@ gulp.task('minify-css', function(){
     .pipe(gulp.dest('./css/'));
 });
 
-gulp.task('minify-images', function(){
-  gulp.src('./img/*')
+gulp.task('img-minify', function(){
+  gulp.src('./img/header-sky.jpg')
      .pipe(imagemin({
         progressive: true,
         svgoPlugins: [{removeViewBox: false}],
         use: [pngcrush()]
         }))
-        .pipe(gulp.dest('dist'));
+        .pipe(rename('header-sky-opt.jpg'))
+        .pipe(gulp.dest('img'));
 });
 
 // Concat all js files into one. If you add js files, you need to explicitly 
