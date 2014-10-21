@@ -3640,17 +3640,20 @@ html {
     color: #e44e99;
     background: #85144b; }
 
-  33% {
+  30% {
     color: #f9a2e6;
     background: #f012be; }
 
-  66% {
+  60% {
     color: #e679f6;
     background: #b10dc9; }
 
-  100% {
+  90% {
     color: #f9a2e6;
-    background: #f012be; } }
+    background: #f012be; } 
+  100% {
+    color: #e44e99;
+    background: #85144b; } }
 
 @-webkit-keyframes shimmer {
   0% {
@@ -3666,8 +3669,8 @@ html {
     background-color: #f3f3f3; } }
 
 .pulsate-bg {
-  -webkit-animation: pulsate 40s ease-in-out infinite;
-  animation: pulsate 40s ease-in-out infinite; }
+  -webkit-animation: pulsate 10s ease-in-out infinite;
+  animation: pulsate 10s ease-in-out infinite; }
 
 .shimmer-bg {
   -webkit-animation: shimmer 20s ease-in-out infinite;
