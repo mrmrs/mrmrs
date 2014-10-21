@@ -14,7 +14,7 @@
 .db {     display: block; }
 .dib {    display: inline-block; }
 .dit {    display: inline-table; }
-.dt {     display: table; }
+.dt {     display: table; table-layout: fixed; width: 100%; }
 .dtc {    display: table-cell; }
 .dtcol {  display: table-column; }
 .dtcolg { display: table-column-group; }
