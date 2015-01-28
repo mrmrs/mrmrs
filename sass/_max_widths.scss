@@ -98,3 +98,27 @@
   .mw-fill-l { max-width: fill-available; }
 }
 
+@include break(extra-large) {
+  .mw-100-xl  { max-width: 100%; }
+  .mw-75-xl   { max-width: 75%; }
+  .mw-50-xl   { max-width: 50%; }
+  .mw-25-xl   { max-width: 25%; }
+
+  .mw1-xl  {  max-width: 1rem; }
+  .mw2-xl  {  max-width: 2rem; }
+  .mw3-xl  {  max-width: 4rem; }
+  .mw4-xl  {  max-width: 8rem; }
+  .mw5-xl  {  max-width: 16rem; }
+  .mw6-xl  {  max-width: 32rem; }
+  .mw7-xl  {  max-width: 48rem; }
+  .mw8-xl  {  max-width: 64rem; }
+  .mw9-xl  {  max-width: 96rem; }
+  .mw10-xl {  max-width: 128rem; }
+
+  .mw-none-xl { max-width: none; }
+  .mw-max-xl  { max-width: max-content; }
+  .mw-min-xl  { max-width: min-content; }
+  .mw-fit-xl  { max-width: fit-content; }
+  .mw-fill-xl { max-width: fill-available; }
+}
+

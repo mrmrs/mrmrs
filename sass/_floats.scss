@@ -39,3 +39,9 @@
   .fn-l { float: none; }
 }
 
+@include break(extra-large) {
+  .fl-xl { float: left; display: inline; }
+  .fr-xl { float: right;  display: inline; }
+  .fn-xl { float: none; }
+}
+

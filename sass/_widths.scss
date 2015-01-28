@@ -108,3 +108,28 @@
   .wi-i-l {     width: inherit; }
 }
 
+@include break(extra-large) {
+  .wi1-xl {      width: 1rem; }
+  .wi2-xl {      width: 2rem; }
+  .wi3-xl {      width: 4rem; }
+  .wi4-xl {      width: 8rem; }
+  .wi5-xl {      width: 16rem; }
+  .wi-10-xl {    width:  10%; }
+  .wi-20-xl {    width:  20%; }
+  .wi-25-xl {    width:  25%; }
+  .wi-40-xl {    width:  40%; }
+  .wi-50-xl {    width:  50%; }
+  .wi-60-xl {    width:  60%; }
+  .wi-75-xl {    width:  75%; }
+  .wi-80-xl {    width:  80%; }
+  .wi-100-xl {   width: 100%; }
+  .wi-bb-xl {    width: border-box; }
+  .wi-cb-xl {    width: content-box; }
+  .wi-mx-xl {    width: max-content; }
+  .wi-mn-xl {    width: min-content; }
+  .wi-av-xl {    width: available; }
+  .wi-fc-xl {    width: fit-content; }
+  .wi-at-xl {    width: auto; }
+  .wi-i-xl {     width: inherit; }
+}
+

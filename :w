@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/i.css">
   </head>
   <body>
-    <header class="pvx phm pax-m paxl-l bb b--near-white black oh pos-rel bg-near-white">
+    <header class=" pvx phm paxl-ns bb b--near-white black oh pos-rel bg-near-white">
       <!--
       <div class="fl mrl dn">
 
@@ -35,10 +35,10 @@
     </header>
     <main>
       <header class="cf">
-        <div class="bb b--near-white bn-xl fl-xl wi-50-xl phm pvl pax-m paxl-l plxl-xl">
-          <div>
+        <div class="bb b--near-white bn-xl fl-xl wi-50-xl">
+          <div class="phm pvx paxl-ns">
             <h1 class="small fw1 ttu serif">About</h1>
-            <p class="serif f3 f2-m f1-l f2-xl lh-copy mw8-xl">
+            <p class="serif f3 f2-m f1-l lh-copy mw8-xl">
               Trying to make the web as fast as possible, highly readable, 100% responsive, and easy to navigate.
             </p>
             <p class="serif f5 f2-ns mw8 lh-copy">
@@ -49,12 +49,12 @@
             </p>
           </div>
         </div>
-        <div class="fl-xl wi-50-xl phm ptl pbxl pvxl-ns phx-m phxl-l pln-xl">
-        <h1 class="ttu f4 f6-l serif fw1 pbs pbl-ns">Featured Work</h1>
+        <div class="fl-xl wi-50-xl prl">
+        <h1 class="ttu serif fw1 pbs pbl-ns">Featured Work</h1>
         <div class="prs-ns wi-100 wi-50-ns fl mbm">
-          <div class="pal pax-l pal-xl pulsate-bg br2">
+          <div class="pal pax-l pulsate-bg br2">
             <a href="http://clrs.cc"
-              class="f2 f1-l f3-xl link b pulsate-bg ttu"
+              class="f2 f1-l link b pulsate-bg ttu"
               title="Better default colors for the web">colors</a>
             <p class="man lh-copy serif-calisto f5 md-gray fw4 pulsate-bg">
               A nicer color palette for the web.
@@ -63,9 +63,9 @@
           </div>
         </div>
         <div class="pls-ns wi-100 wi-50-ns fl mbm">
-          <div class="pal pax-l pal-xl br2 shimmer-bg silver" id="waves" style="overflow: hidden; position:relative;">
+          <div class="pal pax-l br2 shimmer-bg silver" id="waves" style="overflow: hidden; position:relative;">
           <a href="http://mrmrs.io/waves"
-            class="f2 f1-l f3-xl link b ttu z5 silver"
+            class="f2 f1-l link b ttu z5 silver"
             title="Random animated data visualizations for the super-bored">waves</a>
           <p class="man lh-copy serif-calisto f5 silver fw4 z5"
             style="position: relative;">
@@ -75,9 +75,9 @@
           </div>
         </div>
         <div class="prs-ns wi-100 wi-50-ns fl mbs">
-          <div class="pal pax-l pal-xl br2" style="background:url(https://s3-us-west-2.amazonaws.com/prnt/adam-stern-031209_960-2.jpg) no-repeat 0 0;background-size: cover;">
+          <div class="pal pax-l br2" style="background:url(https://s3-us-west-2.amazonaws.com/prnt/adam-stern-031209_960-2.jpg) no-repeat 0 0;background-size: cover;">
           <a href="http://prnt.cc"
-            class="f2 f1-l f3-xl link b ttu white"
+            class="f2 f1-l link b ttu white"
             title="Print design portfolio">prnt</a>
             <p class="man lh-copy serif-calisto f5 white fw4">
               Various print work.
@@ -86,9 +86,9 @@
           </div>
         </div>
         <div class="pls-ns wi-100 wi-50-ns fl mbs">
-          <div class="pal pax-l pal-xl br2 " style="background:#333 url(https://s3-us-west-1.amazonaws.com/gfffs/diamonds-2.gif) no-repeat center center; background-size: cover;">
+          <div class="pal pax-l br2" style="background:#333 url(https://s3-us-west-1.amazonaws.com/gfffs/diamonds-2.gif) no-repeat center center; background-size: cover;">
           <a href="http://gfffs.com"
-            class="f2 f1-l f3-xl link b  ttu white"
+            class="f2 f1-l link b  ttu white"
             title="Random animated data visualizations for the super-bored"><span class="bg-black">gfffs</span></a>
           <p class="man lh-copy serif-calisto f5 white fw4">
             <span class="bg-black">Hi-def gifs for the super-bored.</span>
@@ -98,8 +98,10 @@
         </div>
       </div>
       </header>
+      <section class="pvs phm pax-m paxl-l cf">
+      </section>
 
-      <section class="bt b--near-white pvl phm pax-m phxl-l pvx-l mtl">
+      <section class="bt b--near-white pvs phm pax-m phxl-l pvx-l">
         <h2 class="serif fw4 f6 f3-m f3-l ttu pbm">Open Source</h2>
         <h3 class="serif fw4 f6 f6-m f6-l ttu mtm mtx-l">cascading stylesheets</h3>
         <div class="pvm">
