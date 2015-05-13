@@ -1,2 +1,8 @@
-a { font-size: 10px; }
-b { font: bold 20px/1.5 Times, serif; }
+a { color: red}
+
+@keyframes "loading-fade" {
+    10% { color: blue }
+    20% { color: navy }
+}
+
+b { color: green; background-color: gray }
