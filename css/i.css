@@ -914,10 +914,10 @@ article, div, section, header, footer, main {
 
 */
 .serif {
-  font-family: georgia, serif; }
+  font-family: "Garamond", garamond, georgia, serif; }
 
 .sans-serif {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: Helvetica, 'Avenir Next', avenir, sans-serif; }
 
 .code {
   font-family: Consolas, monaco, monospace; }
@@ -1099,8 +1099,7 @@ img {
 */
 .link {
   text-decoration: none;
-  -webkit-transition: color 0.4s;
-          transition: color 0.4s; }
+  transition: color 0.4s; }
 
 .link:link {
   color: #2D243B; }
@@ -4038,7 +4037,7 @@ img {
 
 */
 html {
-  font-family: avenir, helvetica, arial, sans-serif; }
+  font-family: "Avenir Next", avenir, helvetica, arial, sans-serif; }
 
 @-webkit-keyframes pulsate {
   0% {
