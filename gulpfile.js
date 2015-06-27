@@ -1,6 +1,6 @@
 // Gulp tasks for TRIM
 
-// Load plugins 
+// Load plugins
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     watch = require('gulp-watch'),
@@ -41,7 +41,7 @@ gulp.task('img-minify', function(){
         .pipe(gulp.dest('img'));
 });
 
-// Concat all js files into one. If you add js files, you need to explicitly 
+// Concat all js files into one. If you add js files, you need to explicitly
 // add them in the order you want them added to the final js.
 gulp.task('js-concat', function() {
   gulp.src(['js/base.js', 'js/home.js'])
@@ -90,14 +90,14 @@ gulp.task('pre-process', function(){
 gulp.task('uncss', function(){
     gulp.src('./css/i.css')
         .pipe(size({gzip: true, showFiles: true, title:'pre uncss'}))
-        .pipe(uncss({ html: ['index.html'], ignore: ['svg', ':hover', ':visited', ':link', ':visited'] }))
+        .pipe(uncss({ html: ['index.html', 'reading/index.html'], ignore: ['svg', ':hover', ':visited', ':link', ':visited'] }))
         .pipe(minifyCSS())
-        .pipe(size({gzip: true, showFiles: true, title:'after uncss and minify'}))
         .pipe(rename('i.min.css'))
+        .pipe(size({gzip: true, showFiles: true, title:'after uncss and minify'}))
         .pipe(gulp.dest('css'))
 });
 
-// Initialize browser-sync which starts a static server also allows for 
+// Initialize browser-sync which starts a static server also allows for
 // browsers to reload on filesave
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
