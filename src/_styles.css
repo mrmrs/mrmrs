@@ -1,0 +1,47 @@
+/*
+
+  STYLES
+
+  Add custom styles here.
+
+*/
+
+@-webkit-keyframes pulsate {
+  0% {
+    color: #e44e99;
+    background: #85144b; }
+
+  33% {
+    color: #f9a2e6;
+    background: #f012be; }
+
+  66% {
+    color: #e679f6;
+    background: #b10dc9; }
+
+  100% {
+    color: #f9a2e6;
+    background: #f012be; } }
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-color: #fefefe;
+   }
+  33% {
+    background-color: #f3f3f3;
+  }
+  66% {
+    background-color: #eee;
+  }
+  100% {
+    background-color: #f3f3f3;
+  } }
+
+.pulsate-bg {
+  -webkit-animation: pulsate 40s ease-in-out infinite;
+  animation: pulsate 40s ease-in-out infinite; }
+
+.shimmer-bg {
+  -webkit-animation: shimmer 20s ease-in-out infinite;
+  animation: shimmer 20s ease-in-out infinite; }
+

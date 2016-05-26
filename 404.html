@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      mrmrs / designer in london
+    </title>
+    <meta name="author" content="mrmrs">
+    <meta name="description" content="Portfolio of Adam Morse - London Based Designer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/i.min.css">
+    <style type="text/css" media="screen">
+      .dim, .dim:link { opacity: 1; transition: opacity .2s ease-in; -webkit-transition: opacity .2s ease-in; }
+      .dim:hover, .dim:focus { opacity: .8; transition: opacity .2s ease-in; -webkit-transition: opacity .2s ease-in; }
+      .link-reset, link-reset:hover { text-decoration: none; }
+      body { font-family: 'avenir next', avenir, 'helvetica neue', helvetica, roboto, noto, ubuntu, 'segoe ui', arial, sans-serif; }
+      .measure { max-width: 28em; }
+
+      html, body {
+        padding:0; margin:0;
+        height:100%; width:100%;
+      }
+      body {
+        background:radial-gradient(#fff, #ccc);
+        background:radial-gradient(#ffffff, #fdfdfd 16%, #fbfbfb 33%, #f8f8f8 49%, #efefef 66%, #dfdfdf 82%, #bfbfbf 100%);
+      }
+
+      #notfound {
+        margin:0 auto;
+      }
+      #notfound svg {
+        -webkit-animation: noise 2s linear infinite;
+        animation: noise 2s linear infinite;
+      }
+      @-webkit-keyframes noise {
+        0%, 3%, 5%, 42%, 44%, 100% { -webkit-transform: scaleY(1); }
+        4.3% { -webkit-transform: scaleY(1.7); }
+        43% { -webkit-transform: scaleX(1.5); }
+      }
+      @keyframes noise {
+        0%, 3%, 5%, 42%, 44%, 100% { transform: scaleY(1); }
+        4.3% { transform: scaleY(1.7); }
+        43% { transform: scaleX(1.5); }
+      }
+
+      p {
+        text-align:center;
+      }
+      p.small {
+        font-size:0.8em;
+        opacity:0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="notfound"></div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/svg.js/1.0.0-rc.8/svg.min.js"></script>
+    <script src="http://strangeplanet.fr/files/misc/perlin-noise-simplex.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      if (!SVG.supported) {
+        alert('SVG not supported !');
+      }
+else {
+  // parameters
+  var a = 64,
+  speed = 150,
+  points = [
+    [ , ,1,1, , ,1,1, , ,1,1,1,1,1,1, , ,1,1, , ,1,1],
+    [ ,1,1, , ,1,1, , ,1,1, , ,1,1, , ,1,1, , ,1,1, ],
+    [1,1,1,1,1,1, , ,1,1, , ,1,1, , ,1,1,1,1,1,1, , ],
+    [ , , ,1,1, , ,1,1, , ,1,1, , , , , , ,1,1, , , ],
+    [ , ,1,1, , ,1,1,1,1,1,1, , , , , , ,1,1, , , , ]
+  ],
+  colors = [
+    '#000000', '#111111', '#333333', '#666666', '#999999',
+    '#000000', '#333333', '#333333', '#666666', '#999999',
+    '#000000', '#222222', '#333333', '#666666', '#999999',
+    '#000000', '#444444', '#333333', '#bbbbbb', '#999999',
+    '#000000', '#555555', '#333333', '#cccccc', '#999999',
+    '#000000', '#666666', '#333333', '#dddddd', '#999999',
+    '#000000', '#777777', '#333333', '#666666', '#999999',
+    '#000000', '#888888', '#333333', '#666666', '#999999',
+    '#000000', '#999999', '#333333', '#666666', '#999999',
+    '#000000', '#aaaaaa', '#333333', '#666666'
+  ],
+  shadowColors = ['#eeeeee', '#cccccc'],
+  textColors = ['#000', '#555'];
+
+  // computed parameters
+  var a2 = a/2,
+  h = Math.round(a2*Math.sqrt(3) *100)/100,
+  grid = [points[0].length, points.length],
+  size = [(grid[0]/2+0.5)*a+a*2, grid[1]*h+a*3],
+  nb_colors = colors.length,
+  objects = [],
+  groups = [];
+
+
+  // init canvas
+  var container = document.getElementById('notfound');
+  container.style.width = size[0]+'px';
+  container.style.height = size[1]+'px';
+
+  var simplex = new SimplexNoise(),
+  paper = SVG(container).size(size[0], size[1]).viewbox(0, 0, size[0], size[1]);
+  up = paper.defs().path('M'+ a2 +',0 l'+ a2 +','+ h +' l-'+ a +',0 l'+ a2 +',-'+ h),
+  down = paper.defs().path('M0,0 l'+ a +',0 l-'+ a2 +','+ h +' -'+ a2 +',-'+ h),
+  shadow = [paper.group(), paper.group()];
+
+  // draw objects
+  for (var l=0; l<grid[1]; l++) {
+    objects[l] = [];
+    groups[l] = paper.group();
+
+    for (var c=0; c<grid[0]; c++) {
+      if (!points[l][c]) {
+        continue;
+      }
+
+      var rnd = Math.round((simplex.noise(c/10, l/10)+1) / 2 * nb_colors),
+      cid = rnd - Math.floor(rnd/nb_colors)*nb_colors,
+      pos = [c*a2+a, l*h+a],
+      use;
+
+      if ((l%2==0 && c%2==0) || (l%2==1 && c%2==1)) {
+        use = up;
+      }
+      else {
+        use = down;
+      }
+
+      var el = paper.use(use)
+        .move(pos[0], pos[1])
+        .style('fill:'+colors[cid])
+        .data('i', rnd);
+
+      groups[l].add(el);
+      objects[l][c] = el;
+
+      shadow[0].use(use).move(pos[0], pos[1]);
+      shadow[1].use(use).move(pos[0], pos[1]);
+    }
+  }
+
+
+  // draw text
+  var text = paper.text('Page not found!')
+    .font({
+      size: a
+    })
+  .opacity(0.7)
+    .cx(size[0]/2-a2)
+    .y(size[1]-a-a2);
+
+  shadow[0].add(text.clone());
+  shadow[1].add(text.clone());
+
+  text.fill(
+      paper.gradient('linear', function(stop) {
+        stop.at(0, textColors[0]);
+        stop.at(1, textColors[1]);
+      }).from(0,0).to(0,1)
+      );
+
+
+  // animate shadows
+  shadow[0].back()
+    .fill(shadowColors[0])
+    .animate(speed*4).loop()
+    .during(function(i) {
+      if (i<0.1)
+        this.move(-a/4, 0);
+      else if (i>=0.8)
+        this.move(a/12, 0);
+
+      if (i<0.1)
+        this.opacity(0.1);
+      else if (i>=0.4 && i<0.5)
+        this.opacity(0.5);
+      else if (i>=0.7 && i<0.8)
+        this.opacity(0.3)
+      else if (i>=0.9)
+        this.opacity(0.6);
+      else
+        this.opacity(0);
+    });
+
+  shadow[1].back()
+    .fill(shadowColors[1])
+    .animate(speed*6).loop()
+    .during(function(i) {
+      if (i<0.1)
+        this.move(a/4, 0);
+      else if (i>=0.8)
+        this.move(-a/12, 0);
+
+      if (i<0.1)
+        this.opacity(0.1);
+      else if (i>=0.4 && i<0.5)
+        this.opacity(0.5);
+      else if (i>=0.7 && i<0.8)
+        this.opacity(0.3)
+      else if (i>=0.9)
+        this.opacity(0.6);
+      else
+        this.opacity(0);
+    });
+
+
+  var counter = 0;
+  setInterval(function() {
+    // animate position
+    for (var l=0, i=groups.length; l<i; l++) {
+      if (Math.random()<0.5) {
+        groups[l].x(Math.round(Math.random()*a/5));
+      }
+    }
+
+    // animate colors
+    for (var l=0, i=objects.length; l<i; l++) {
+      for (var c=0, j=objects[l].length; c<j; c++) {
+        if (!objects[l][c]) {
+          continue;
+        }
+
+        var cid = objects[l][c].data('i') + counter;
+        cid-= Math.floor(cid/nb_colors)*nb_colors;
+
+        objects[l][c].style('fill:'+colors[cid]);
+      }
+    }
+
+    counter++;
+    if (counter == nb_colors) {
+      counter = 0;
+    }
+  }, speed);
+}
+    </script>
+
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39529635-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
