@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/tachyons.min.css">
     <style type="text/css" media="screen">
-      .link-reset, link-reset:hover { text-decoration: none; }
+      .link dim, link dim:hover { text-decoration: none; }
       body { font-family: 'avenir next', avenir, 'helvetica neue', helvetica, roboto, noto, ubuntu, 'segoe ui', arial, sans-serif; }
       .measure { max-width: 28em; }
 .papercraft-back {
@@ -25,10 +25,10 @@
       <nav class="pb3 pt3 bb b--black-10 ph3 ph5-m ph6-l">
         <div class="dt w-100">
           <div class="dtc w-75 v-mid">
-            <a class="fw6 link black-80 dim pr3 pr4-ns dib" href="http://mrmrs.io/writing" >Writing</a>
-            <a class="fw6 link black-80 dim pr3 pr4-ns dib" href="/reading/" >Reading</a>
-            <a class="fw6 link black-80 dim pr3 pr4-ns dib" href="http://github.com/mrmrs" >GitHub</a>
-            <a class="fw6 link black-80 dim pr3 pr4-ns dib" href="http://twitter.com/mrmrs_" >Twitter</a>
+            <a class="fw6 link dim black-80 dim pr3 pr4-ns dib" href="http://mrmrs.io/writing" >Writing</a>
+            <a class="fw6 link dim black-80 dim pr3 pr4-ns dib" href="/reading/" >Reading</a>
+            <a class="fw6 link dim black-80 dim pr3 pr4-ns dib" href="http://github.com/mrmrs" >GitHub</a>
+            <a class="fw6 link dim black-80 dim pr3 pr4-ns dib" href="http://twitter.com/mrmrs_" >Twitter</a>
           </div>
         <div class="dtc v-mid w-25 tr">
           <div class="w2 dib">
@@ -42,31 +42,31 @@
     <header class="pv6 ph3 ph5-m ph6-l bb b--white-80 black oh relative">
       <div class="dt dt--fixed w-100">
         <div class="dtc ph1 ph2-m ph3-l">
-           <svg class="papercraft papercraft-m" viewBox="0 0 32 32">
+           <svg class="papercraft papercraft-m w-100" viewBox="0 0 32 32">
             <path class="papercraft-back" d="M32 0 L32 32 L0 32 Z"/>
             <path class="papercraft-front" d="M0 0 L32 32 L0 32 Z"/>
            </svg>
          </div>
         <div class="dtc ph1 ph2-m ph3-l">
-         <svg class="papercraft papercraft-r" viewBox="0 0 32 32">
+         <svg class="papercraft papercraft-r w-100" viewBox="0 0 32 32">
           <path class="papercraft-back" d="M0 16 L32 32 L0 32 Z"/>
           <path class="papercraft-front" d="M0 0 L32 0 L30 20 L0 32 Z"/>
         </svg>
          </div>
         <div class="dtc ph1 ph2-m ph3-l">
-         <svg class="papercraft papercraft-m" viewBox="0 0 32 32">
+         <svg class="papercraft papercraft-m w-100" viewBox="0 0 32 32">
           <path class="papercraft-back" d="M32 0 L32 32 L0 32 Z"/>
           <path class="papercraft-front" d="M0 0 L32 32 L0 32 Z"/>
          </svg>
          </div>
         <div class="dtc ph1 ph2-m ph3-l">
-         <svg class="papercraft papercraft-r"  viewBox="0 0 32 32">
+         <svg class="papercraft papercraft-r w-100"  viewBox="0 0 32 32">
           <path class="papercraft-back" d="M0 16 L32 32 L0 32 Z"/>
           <path class="papercraft-front" d="M0 0 L32 0 L30 20 L0 32 Z"/>
         </svg>
          </div>
         <div class="dtc ph1 ph2-m ph3-l">
- <svg class="papercraft papercraft-s" viewBox="0 0 32 32">
+ <svg class="papercraft papercraft-s w-100" viewBox="0 0 32 32">
         <path class="papercraft-back" d="M0 0 L32 16 L32 32 L0 16 Z"/>
         <path class="papercraft-front" d="M0 0 L32 0 L32 8 L0 16 Z M0 24 L32 16 L32 32 L0 32 Z"/>
       </svg>
@@ -74,7 +74,6 @@
     </div>
 
 
-          <h2 class="fw4 f6 ttu tracked dn">Designer</h2>
     </header>
 
     <main>
@@ -96,7 +95,7 @@
         <div class="cf fl-xl w-50-xl ph3 pt4 pb5 pv6-ns ph5-m ph6-l pl0-xl">
         <h1 class="ttu tracked f4 f6-l fw1 pb2 pbl-ns fw4">Featured Work</h1>
         <div class="w-100 w-50-ns fl">
-          <a href="http://clrs.cc" class="f2 f1-l f3-xl db pa4 pv5-ns pulsate-bg dim link-reset" title="Better default colors for the web">
+          <a href="http://clrs.cc" class="f2 f1-l f3-xl db pa4 pv5-ns pulsate-bg dim link dim" title="Better default colors for the web">
             <span class="ttu fw6 db pulsate-bg">colors</span>
             <span class="db man measure lh-copy f5 mid-gray fw4 pulsate-bg">
               A nicer color pa4ette for the web.
@@ -106,7 +105,7 @@
         </div>
         <div class="w-100 w-50-ns fl">
           <a href="http://tachyons.io"
-            class="f2 f1-l f3-xl link-reset black z5 silver shimmer-bg pa4 pv5-ns db dim"
+            class="f2 f1-l f3-xl link black z5 silver shimmer-bg pa4 pv5-ns db dim"
             title="CSS toolkit for building maintainable, responsive, and performant interfaces">
             <span class="db b">TACHYONS</span>
             <span class="db measure lh-copy f5 silver fw4 z5">
@@ -169,7 +168,7 @@
         <h2 class="fw4 f6 ttu tracked pb3">Open Source</h2>
         <div class="pv3">
           <a href="http://mrmrs.io/gradients"
-            class="f2 mega-ns link black-80 fw6"
+            class="f2 mega-ns link dim black-80 fw6 dim"
             title="CSS module of curated gradients">gradients</a>
           <p class="ma0 measure lh-copy f4  fw4">
             Curated css gradients
@@ -178,7 +177,7 @@
         </div>
         <div class="pv3">
           <a href="http://mrmrs.io/ios-dynamic-type"
-            class="f2 mega-ns link black-80 fw6"
+            class="f2 mega-ns link dim black-80 fw6"
             title="Visualize your css">iOS dynamic type</a>
           <p class="ma0 measure lh-copy f4  fw4 mw7">
             CSS module for utilizing iOS dynamic type settings.
@@ -186,7 +185,7 @@
         </div>
         <div class="pv3">
           <a href="http://mrmrs.io/profile"
-            class="f2 mega-ns link black-80 fw6"
+            class="f2 mega-ns link dim black-80 fw6"
             title="Github Profile Viewer">profile</a>
           <p class="ma0 measure lh-copy f4  fw4">
             Mobile friendly github profile viewer.
@@ -194,7 +193,7 @@
         </div>
         <div class="pv3">
           <a href="http://mrmrs.io/btns"
-            class="f2 mega-ns link black-80 fw6"
+            class="f2 mega-ns link dim black-80 fw6"
             title="CSS module for building beutiful responsive buttons">btns</a>
           <p class="ma0 measure lh-copy f4  fw4">
             Extemely light-weight css module for constructing responsive buttons.
@@ -203,7 +202,7 @@
         </div>
         <div class="pv3">
           <a href="http://mrmrs.io/diatonic-type"
-            class="f2 mega-ns link black-80 fw6"
+            class="f2 mega-ns link dim black-80 fw6"
             title="Diatonic Scale of Type">diatonic type</a>
           <p class="ma0 measure lh-copy f4  fw4">
             A traditional type-scale for print translated for the web.
@@ -211,7 +210,7 @@
         </div>
         <div class="pv3">
           <a href="http://mrmrs.io/type.css"
-            class="f2 mega-ns link black-80 fw6"
+            class="f2 mega-ns link dim black-80 fw6"
             title="CSS module for a mobile-first responsive type scale">type.css</a>
           <p class="ma0 measure lh-copy f4  fw4">
             Tiny css module for a mobile-first responsive type scale.
@@ -220,24 +219,24 @@
         </div>
         <div class="pv3">
           <a href="http://fluidity.sexy"
-            class="f2 mega-ns link black-80 fw6"
+            class="f2 mega-ns link dim black-80 fw6"
             title="A fluid web is a sexy web">fluidity</a>
           <p class="ma0 measure lh-copy f4  fw4">
             A css shim to make html a bit more responsive out of the box. <small class="db">247 bytes</small>
           </p>
         </div>
         <div class="pv3">
-          <a href="http://mrmrs.io/link black-80s"
-            class="f2 mega-ns link black-80 fw6"
-            title="Smarter defaults for link black-80s">link black-80s</a>
+          <a href="http://mrmrs.io/link dim black-80s"
+            class="f2 mega-ns link dim black-80 fw6"
+            title="Smarter defaults for link dim black-80s">link dim black-80s</a>
           <p class="ma0 measure lh-copy f4  fw4">
-            Better default link black-80s for the web. Easy to customize and/or extend.
+            Better default link dim black-80s for the web. Easy to customize and/or extend.
             <small class="db">155 bytes</small>
           </p>
         </div>
         <div class="pv3">
           <a href="http://github.com/mrmrs/css-uncut"
-            class="f2 mega-ns link black-80 fw6"
+            class="f2 mega-ns link dim black-80 fw6"
             title="All of css as single purpose classes">css uncut</a>
           <p class="ma0 measure lh-copy f4  fw4">Everything from the css spec broken up into single purpose classes.
             <small class="db">~45kb</small>
@@ -245,28 +244,28 @@
         </div>
         <div class="pv3">
           <a href="http://mrmrs.io/package"
-            class="f2 mega-ns link black-80 fw6"
+            class="f2 mega-ns link dim black-80 fw6"
             title="All of css as single purpose classes">package</a>
           <p class="ma0 measure lh-copy f4  fw4">A template I use for package.json files</p>
         </div>
         <div class="pv3">
-          <a class="f2 mega-ns link black-80 fw6" href="http://mrmrs.io/contrast">contrast</a>
+          <a class="f2 mega-ns link dim black-80 fw6" href="http://mrmrs.io/contrast">contrast</a>
           <p class="ma0 measure lh-copy f4  fw4">
             Readable type contrasts.
           </p>
         </div>
-        <div class="pv3"><a class="f2 mega-ns link black-80 fw6" href="http://mn-ml.cc">mnml</a>
+        <div class="pv3"><a class="f2 mega-ns link dim black-80 fw6" href="http://mn-ml.cc">mnml</a>
           <p class="ma0 measure lh-copy f4  fw4">
             Minimal template to design in the browser with html &amp; postcss.
           </p>
         </div>
-        <div class="pv3"><a class="f2 mega-ns link black-80 fw6" href="http://github.com/mrmrs/trim">trim</a>
+        <div class="pv3"><a class="f2 mega-ns link dim black-80 fw6" href="http://github.com/mrmrs/trim">trim</a>
           <p class="ma0 measure lh-copy f4  fw4">
             Prototype setup to build light-weight, more performant websites.
           </p>
         </div>
         <div class="pv3">
-          <a class="f2 mega-ns link black-80 fw6" href="http://github.com/mrmrs/html">html</a>
+          <a class="f2 mega-ns link dim black-80 fw6" href="http://github.com/mrmrs/html">html</a>
           <p class="ma0 measure lh-copy f4  fw4">
             Every html element from the spec - on one page. Useful as a base to starting a css framework from scratch.
           </p>
@@ -287,7 +286,7 @@
           </p>
         </div>
         <div class="pv3">
-          <a href="http://mrmrs.io/up" title="up - a sequence" class="f2 mega-ns link black-80 fw6">up &amp; in thirds</a>
+          <a href="http://mrmrs.io/up" title="up - a sequence" class="f2 mega-ns link dim black-80 fw6">up &amp; in thirds</a>
           <p class="ma0 measure lh-copy f5  fw4">
             Photography collection.
           </p>
@@ -295,73 +294,73 @@
       </section>
       <section class="bt b--black-10 pvs ph3 pa5-m ph6-l pv5-l">
         <h2 class="fw4 f3 f3-m f3-l mb4 ttu"><a href="http://mrmrs.io/writing/" title="Writing by Adam Morse" class="link f6 black-80 dim">WRITING</a></h2>
-        <a href="http://mrmrs.io/writing/2016/03/24/scalable-css/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2016/03/24/scalable-css/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">CSS and Scalability</span>
         </a>
-        <a href="http://mrmrs.io/writing/2016/03/23/the-veil-of-ignorance/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2016/03/23/the-veil-of-ignorance/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">The Veil of Ignorance</span>
         </a>
-        <a href="http://mrmrs.io/writing/2015/10/06/design-systems/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2015/10/06/design-systems/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Design Systems</span>
         </a>
-        <a href="http://mrmrs.io/writing/2015/07/27/too-many-tools/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2015/07/27/too-many-tools/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Too Many Tools and Frameworks</span>
         </a>
-        <a href="http://mrmrs.io/writing/2016/03/17/webfonts/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2016/03/17/webfonts/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Webfonts</span>
         </a>
-        <a href="http://mrmrs.io/writing/2015/09/25/tools-for-designing-in-the-browser/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2015/09/25/tools-for-designing-in-the-browser/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Tools for Designing in the Browser</span>
         </a>
-        <a href="http://mrmrs.io/writing/2015/08/10/designing-for-the-web/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2015/08/10/designing-for-the-web/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Web Design Process</span>
         </a>
-        <a href="http://mrmrs.io/writing/2015/08/11/books-to-read/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2015/08/11/books-to-read/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Reading Materials</span>
         </a>
-        <a href="http://mrmrs.io/writing/2015/05/14/what-are-classes-for/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2015/05/14/what-are-classes-for/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">What are Classes for?</span>
         </a>
-        <a href="http://mrmrs.io/writing/2014/08/18/mobile-first-css/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2014/08/18/mobile-first-css/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Mobile-first CSS</span>
         </a>
-        <a href="http://mrmrs.io/writing/2014/08/11/good-css/" title="Good CSS" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2014/08/11/good-css/" title="Good CSS" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Good CSS</span>
         </a>
-        <a href="http://mrmrs.io/writing/2013/04/11/what-is-css-for/" title="What is CSS for?" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2013/04/11/what-is-css-for/" title="What is CSS for?" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">What is CSS for?</span>
         </a>
-        <a href="http://mrmrs.io/writing/2014/12/18/caring/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2014/12/18/caring/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Does CSS Performance matter?</span>
         </a>
-        <a href="http://mrmrs.io/writing/2015/07/20/learning-css/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2015/07/20/learning-css/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Learning CSS</span>
         </a>
-        <a href="http://mrmrs.io/writing/2015/06/07/line-height/" class="db link black-80 f4 f3-ns mb3">
+        <a href="http://mrmrs.io/writing/2015/06/07/line-height/" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">How to Line-Height</span>
         </a>
-        <a href="https://hackdesign.org/lessons/49" class="db link black-80 f4 f3-ns mb3">
+        <a href="https://hackdesign.org/lessons/49" class="db link dim black-80 f4 f3-ns mb3">
           <span class="pb2 fw6">Hack Design: Vim as a Design Tool</span>
         </a>
       </section>
       <section class="bt b--black-10 pvs ph3 pa5-m ph6-l pv5-l">
         <h2 class="fw4 f6 ttu mb4">Interviews / Podcasts</h2>
-        <a class="db f4 mb3 link black-80" href="https://medium.com/type-thursday/three-considerations-to-make-your-typography-more-accessible-58017bc88b4#.g2l5fweuk" title="Type Thursday">
+        <a class="db f4 mb3 link dim black-80" href="https://medium.com/type-thursday/three-considerations-to-make-your-typography-more-accessible-58017bc88b4#.g2l5fweuk" title="Type Thursday">
           <span class="fw6">Type Thursday</span> - "Three Considerations To Make Your Typography More Accessible"
         </a>
-        <a class="db f4 mb3 link black-80" href="http://spec.fm/podcasts/design-details/16190" title="Design Details">
+        <a class="db f4 mb3 link dim black-80" href="http://spec.fm/podcasts/design-details/16190" title="Design Details">
           <span class="fw6">Design Details</span> - "Lego Bits (feat. Adam Morse)"
         </a>
-        <a class="db f4 mb3 link black-80" href="https://player.fm/series/web-friends/the-authentic-adam-morse">
+        <a class="db f4 mb3 link dim black-80" href="https://player.fm/series/web-friends/the-authentic-adam-morse">
           <span class="fw6">Web Friends</span> - "The authentic Adam Morse"
         </a>
-        <a class="db f4  mb3 link black-80" href="https://viewsourc.es/2015/06/04/episode-7-vim/">
+        <a class="db f4  mb3 link dim black-80" href="https://viewsourc.es/2015/06/04/episode-7-vim/">
           <span class="fw6">View Sources</span> - "Vim as a design tool"
         </a>
       </section>
       <section class="bt b--black-10 pvs ph3 pa5-m ph6-l pv5-l">
         <h2 class="fw4 f6 ttu tracked mb4">Talks</h2>
-          <a href="https://www.youtube.com/embed/14N_V56tqd4" class="f4 fw4 lh-title mb0 fw6 link black-80 dim">"Things I’ve Learned About CSS During 10 Years of Typing it Sometimes" - CSSConf Oakland</a>
+          <a href="https://www.youtube.com/embed/14N_V56tqd4" class="f4 fw4 lh-title mb0 fw6 link dim black-80 dim">"Things I’ve Learned About CSS During 10 Years of Typing it Sometimes" - CSSConf Oakland</a>
           <h4 class="f5 fw4 lh-title mt0 ">November 2014</h4>
           <article>
             <h3 class="f4 fw6 lh-title mb0">"Exploring the power of Abstract Syntax Trees" - The Mixin SF</h3>
@@ -382,36 +381,36 @@
 
       </section>
       <section class="bt b--black-10 pvs ph3 pa5-m ph6-l pv5-l">
-        <h2 class="fw4 f6 ttu tracked mb4 black-80"><a href="http://designbytyping.com" class="link black-80 dim">Screencasts</a></h2>
-        <a href="http://designbytyping.com/2013/12/24/vim-project-setup/" class="db dim link black-80 f4 mb4">
+        <h2 class="fw4 f6 ttu tracked mb4 black-80"><a href="http://designbytyping.com" class="link dim black-80 dim">Screencasts</a></h2>
+        <a href="http://designbytyping.com/2013/12/24/vim-project-setup/" class="db dim link dim black-80 f4 mb4">
           <span class="pb2 fw6">Vim project setup</span>
           <small class="db">window management, saving sessions, opening files, saving files and more</small>
         </a>
-        <a href="http://designbytyping.com/2014/04/10/vim-edit-output-from-external-command/" class="db dim link black-80 f4 mb4" title="Edit the output of an external process with vim">
+        <a href="http://designbytyping.com/2014/04/10/vim-edit-output-from-external-command/" class="db dim link dim black-80 f4 mb4" title="Edit the output of an external process with vim">
           <span class="pb2 fw6">Editing output from an external process with Vim</span>
           <small class="db">unix, :r, :!, visual-block mode, recording a macro</small>
         </a>
-        <a href="http://designbytyping.com/2014/05/14/svg-and-vim/" class="db dim link black-80 f4 mb4" title="Fun with svg and vim">
+        <a href="http://designbytyping.com/2014/05/14/svg-and-vim/" class="db dim link dim black-80 f4 mb4" title="Fun with svg and vim">
           <span class="pb2 fw6">Fun with svg and Vim</span>
           <small class="db">registers, macros, :bufdo</small>
         </a>
-        <a href="http://designbytyping.com/2015/01/22/download-file-under-cursor/" class="db dim link black-80 f4 mb4">
+        <a href="http://designbytyping.com/2015/01/22/download-file-under-cursor/" class="db dim link dim black-80 f4 mb4">
           <span class="pb2 fw6">Vim - Download a file under your cursor</span>
           <small class="db">motions, visual mode, registers, curl, :!</small>
         </a>
-        <a href="http://designbytyping.com/2014/09/30/hsla-and-vim/" class="db dim link black-80 f4 mb4">
+        <a href="http://designbytyping.com/2014/09/30/hsla-and-vim/" class="db dim link dim black-80 f4 mb4">
           <span class="pb2 fw6">Speedcast: Building an HSLA visualizer in under 5 minutes</span>
           <small class="db">visual-block mode, macros, ctrl-a</small>
         </a>
-        <a href="http://designbytyping.com/2014/09/24/responsive-photo-grid-under-5-minutes/" class="db dim link black-80 f4 mb4">
+        <a href="http://designbytyping.com/2014/09/24/responsive-photo-grid-under-5-minutes/" class="db dim link dim black-80 f4 mb4">
           <span class="pb2 fw6">Speedcast: Responsive photo grid in 5:20</span>
           <small class="db">gulp, npm, grid, tachyons, visual block, :%s </small>
         </a>
-        <a href="http://designbytyping.com/2014/09/22/designing-in-the-browser/" class="db dim link black-80 f4 mb4">
+        <a href="http://designbytyping.com/2014/09/22/designing-in-the-browser/" class="db dim link dim black-80 f4 mb4">
           <span class="pb2 fw6">Designing in the browser</span>
           <small class="db">gulp, npm, tachyons</small>
         </a>
-        <a href="http://designbytyping.com/2014/09/13/vim-delete/" class="db dim link black-80 f4 mb4">
+        <a href="http://designbytyping.com/2014/09/13/vim-delete/" class="db dim link dim black-80 f4 mb4">
           <span class="pb2 fw6">Deleting an entire file in vim</span>
           <small class="db">:%d, ggdG</small>
         </a>
