@@ -87,7 +87,6 @@ a:hover, a:focus, a:active {
 }
 .masthead::before {
     background-color: #381aab;
-    background-image: linear-gradient(to right, #381aab, #7757f5);
     content: "";
     padding: .125rem;
     position: absolute;
