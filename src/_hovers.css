@@ -57,3 +57,10 @@
   text-decoration: underline;
 }
 
+.grow {
+  transition: transform .2s;
+}
+
+.grow:hover {
+  transform: scale(1.05);
+}
