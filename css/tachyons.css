@@ -1614,7 +1614,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  * */
 .aspect-ratio { height: 0; position: relative; }
 .aspect-ratio--quarter { padding-bottom: 25%; }
-.aspect-ratio--16x9 { padd-bottom: 56.25%; }
+.aspect-ratio--16x9 { padding-bottom: 56.25%; }
 .aspect-ratio--9x16 { padding-bottom: 177.77%; }
 .aspect-ratio--4x3 { padding-bottom: 75%; }
 .aspect-ratio--3x4 { padding-bottom: 133.33%; }
