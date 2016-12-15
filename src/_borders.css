@@ -1,18 +1,23 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
-
 /*
 
-   BORDER BASE
+    BORDERS
+    Docs: http://tachyons.io/docs/themes/borders/
 
-   Legend
+    Base:
+      b = border
 
-   a = all
-   t = top
-   r = right
-   b = bottom
-   l = left
+    Modifiers:
+      a = all
+      t = top
+      r = right
+      b = bottom
+      l = left
+      n = none
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
 
 */
 
@@ -22,6 +27,7 @@
   .bb { border-bottom-style: solid; border-bottom-width: 1px; }
   .bl { border-left-style: solid; border-left-width: 1px; }
   .bn { border-style: none; border-width: 0; }
+
 
 @media (--breakpoint-not-small) {
   .ba-ns { border-style: solid; border-width: 1px; }

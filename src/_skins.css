@@ -1,64 +1,13 @@
 /*
 
-   COLOR VARIABLES
-
-   Variables to set colors for
-   color, background-color, and border-color
-
-*/
-
-/* variables */
-:root {
-
-  --black-90: rgba(0,0,0,.9);
-  --black-80: rgba(0,0,0,.8);
-  --black-70: rgba(0,0,0,.7);
-  --black-60: rgba(0,0,0,.6);
-  --black-50: rgba(0,0,0,.5);
-  --black-40: rgba(0,0,0,.4);
-  --black-30: rgba(0,0,0,.3);
-  --black-20: rgba(0,0,0,.2);
-  --black-10: rgba(0,0,0,.1);
-  --black-05: rgba(0,0,0,.05);
-
-  --white-90: rgba(255,255,255,.9);
-  --white-80: rgba(255,255,255,.8);
-  --white-70: rgba(255,255,255,.7);
-  --white-60: rgba(255,255,255,.6);
-  --white-50: rgba(255,255,255,.5);
-  --white-40: rgba(255,255,255,.4);
-  --white-30: rgba(255,255,255,.3);
-  --white-20: rgba(255,255,255,.2);
-  --white-10: rgba(255,255,255,.1);
-
-  --transparent: transparent;
-
-  --black: #000;
-  --near-black: #111;
-  --dark-gray:#333;
-  --mid-gray:#555;
-  --gray: #777;
-  --silver: #999;
-  --light-silver: #aaa;
-  --moon-gray: #ccc;
-  --light-gray: #eee;
-  --near-white: #f4f4f4;
-  --white: #fff;
-
-}
-
-
-.blue { color: #0089EB; }
-.bg-washed { background-color: #f1feff; }
-
-/*
-
    SKINS
+   Docs: http://tachyons.io/docs/themes/skins/
+
+   Classes for setting foreground and background colors on elements.
+   If you haven't declared a border color, but set border on an element, it will 
+   be set to the current text color. 
 
 */
-
-
-
 
 /* Text colors */
 
@@ -73,17 +22,6 @@
 .black-10 {         color: var(--black-10); }
 .black-05 {         color: var(--black-05); }
 
-.bg-black-90 {         background-color: var(--black-90); }
-.bg-black-80 {         background-color: var(--black-80); }
-.bg-black-70 {         background-color: var(--black-70); }
-.bg-black-60 {         background-color: var(--black-60); }
-.bg-black-50 {         background-color: var(--black-50); }
-.bg-black-40 {         background-color: var(--black-40); }
-.bg-black-30 {         background-color: var(--black-30); }
-.bg-black-20 {         background-color: var(--black-20); }
-.bg-black-10 {         background-color: var(--black-10); }
-.bg-black-05 {         background-color: var(--black-05); }
-
 .white-90 {         color: var(--white-90); }
 .white-80 {         color: var(--white-80); }
 .white-70 {         color: var(--white-70); }
@@ -93,16 +31,6 @@
 .white-30 {         color: var(--white-30); }
 .white-20 {         color: var(--white-20); }
 .white-10 {         color: var(--white-10); }
-
-.bg-white-90 {        background-color: var(--white-90); }
-.bg-white-80 {        background-color: var(--white-80); }
-.bg-white-70 {        background-color: var(--white-70); }
-.bg-white-60 {        background-color: var(--white-60); }
-.bg-white-50 {        background-color: var(--white-50); }
-.bg-white-40 {        background-color: var(--white-40); }
-.bg-white-30 {        background-color: var(--white-30); }
-.bg-white-20 {        background-color: var(--white-20); }
-.bg-white-10 {        background-color: var(--white-10); }
 
 .black {         color: var(--black); }
 .near-black {    color: var(--near-black); }
@@ -115,6 +43,53 @@
 .light-gray {    color: var(--light-gray); }
 .near-white {    color: var(--near-white); }
 .white {         color: var(--white); }
+
+.dark-red { color: var(--dark-red); }
+.red { color: var(--red); }
+.light-red { color: var(--light-red); }
+.orange { color: var(--orange); }
+.gold { color: var(--gold); }
+.yellow { color: var(--yellow); }
+.light-yellow { color: var(--light-yellow); }
+.purple { color: var(--purple); }
+.light-purple { color: var(--light-purple); }
+.dark-pink { color: var(--dark-pink); }
+.hot-pink { color: var(--hot-pink); }
+.pink { color: var(--pink); }
+.light-pink { color: var(--light-pink); }
+.dark-green { color: var(--dark-green); }
+.green { color: var(--green); }
+.light-green { color: var(--light-green); }
+.navy { color: var(--navy); }
+.dark-blue { color: var(--dark-blue); }
+.blue { color: var(--blue); }
+.light-blue { color: var(--light-blue); }
+.lightest-blue { color: var(--lightest-blue); }
+.washed-blue { color: var(--washed-blue); }
+.washed-green { color: var(--washed-green); }
+.washed-yellow { color: var(--washed-yellow); }
+.washed-red { color: var(--washed-red); }
+
+.bg-black-90 {         background-color: var(--black-90); }
+.bg-black-80 {         background-color: var(--black-80); }
+.bg-black-70 {         background-color: var(--black-70); }
+.bg-black-60 {         background-color: var(--black-60); }
+.bg-black-50 {         background-color: var(--black-50); }
+.bg-black-40 {         background-color: var(--black-40); }
+.bg-black-30 {         background-color: var(--black-30); }
+.bg-black-20 {         background-color: var(--black-20); }
+.bg-black-10 {         background-color: var(--black-10); }
+.bg-black-05 {         background-color: var(--black-05); }
+.bg-white-90 {        background-color: var(--white-90); }
+.bg-white-80 {        background-color: var(--white-80); }
+.bg-white-70 {        background-color: var(--white-70); }
+.bg-white-60 {        background-color: var(--white-60); }
+.bg-white-50 {        background-color: var(--white-50); }
+.bg-white-40 {        background-color: var(--white-40); }
+.bg-white-30 {        background-color: var(--white-30); }
+.bg-white-20 {        background-color: var(--white-20); }
+.bg-white-10 {        background-color: var(--white-10); }
+
 
 
 /* Background colors */
@@ -132,54 +107,28 @@
 .bg-white {         background-color: var(--white); }
 .bg-transparent {   background-color: var(--transparent); }
 
-
-/* Skins for specific pseudoclasses */
-.focus-black:focus { color: var(--black); }
-.focus-near-black:focus { color: var(--near-black); }
-.focus-dark-gray:focus { color: var(--dark-gray); }
-.focus-mid-gray:focus { color: var(--mid-gray); }
-.focus-gray:focus { color: var(--gray); }
-.focus-silver:focus { color: var(--silver); }
-.focus-light-silver:focus { color: var(--light-silver); }
-.focus-moon-gray:focus { color: var(--moon-gray); }
-.focus-light-gray:focus { color: var(--light-gray); }
-.focus-near-white:focus { color: var(--near-white); }
-.focus-white:focus { color: var(--white); }
-
-.bg-focus-black:focus { background-color: var(--black); }
-.bg-focus-near-black:focus { background-color: var(--near-black); }
-.bg-focus-dark-gray:focus { background-color: var(--dark-gray); }
-.bg-focus-mid-gray:focus { background-color: var(--mid-gray); }
-.bg-focus-gray:focus { background-color: var(--gray); }
-.bg-focus-silver:focus { background-color: var(--silver); }
-.bg-focus-light-silver:focus { background-color: var(--light-silver); }
-.bg-focus-moon-gray:focus { background-color: var(--moon-gray); }
-.bg-focus-light-gray:focus { background-color: var(--light-gray); }
-.bg-focus-near-white:focus { background-color: var(--near-white); }
-.bg-focus-white:focus { background-color: var(--white); }
-.bg-focus-transparent:focus { background-color: var(--transparent); }
-
-.hover-black:hover { color: var(--black); }
-.hover-near-black:hover { color: var(--near-black); }
-.hover-dark-gray:hover { color: var(--dark-gray); }
-.hover-mid-gray:hover { color: var(--mid-gray); }
-.hover-gray:hover { color: var(--gray); }
-.hover-silver:hover { color: var(--silver); }
-.hover-light-silver:hover { color: var(--light-silver); }
-.hover-moon-gray:hover { color: var(--moon-gray); }
-.hover-light-gray:hover { color: var(--light-gray); }
-.hover-near-white:hover { color: var(--near-white); }
-.hover-white:hover { color: var(--white); }
-
-.bg-hover-black:hover { background-color: var(--black); }
-.bg-hover-near-black:hover { background-color: var(--near-black); }
-.bg-hover-dark-gray:hover { background-color: var(--dark-gray); }
-.bg-hover-mid-gray:hover { background-color: var(--mid-gray); }
-.bg-hover-gray:hover { background-color: var(--gray); }
-.bg-hover-silver:hover { background-color: var(--silver); }
-.bg-hover-light-silver:hover { background-color: var(--light-silver); }
-.bg-hover-moon-gray:hover { background-color: var(--moon-gray); }
-.bg-hover-light-gray:hover { background-color: var(--light-gray); }
-.bg-hover-near-white:hover { background-color: var(--near-white); }
-.bg-hover-white:hover { background-color: var(--white); }
-.bg-hover-transparent:hover { background-color: var(--transparent); }
+.bg-dark-red { background-color: var(--dark-red); }
+.bg-red { background-color: var(--red); }
+.bg-light-red { background-color: var(--light-red); }
+.bg-orange { background-color: var(--orange); }
+.bg-gold { background-color: var(--gold); }
+.bg-yellow { background-color: var(--yellow); }
+.bg-light-yellow { background-color: var(--light-yellow); }
+.bg-purple { background-color: var(--purple); }
+.bg-light-purple { background-color: var(--light-purple); }
+.bg-dark-pink { background-color: var(--dark-pink); }
+.bg-hot-pink { background-color: var(--hot-pink); }
+.bg-pink { background-color: var(--pink); }
+.bg-light-pink { background-color: var(--light-pink); }
+.bg-dark-green { background-color: var(--dark-green); }
+.bg-green { background-color: var(--green); }
+.bg-light-green { background-color: var(--light-green); }
+.bg-navy { background-color: var(--navy); }
+.bg-dark-blue { background-color: var(--dark-blue); }
+.bg-blue { background-color: var(--blue); }
+.bg-light-blue { background-color: var(--light-blue); }
+.bg-lightest-blue { background-color: var(--lightest-blue); }
+.bg-washed-blue { background-color: var(--washed-blue); }
+.bg-washed-green { background-color: var(--washed-green); }
+.bg-washed-yellow { background-color: var(--washed-yellow); }
+.bg-washed-red { background-color: var(--washed-red); }

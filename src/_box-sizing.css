@@ -1,5 +1,7 @@
 /*
-  Box Sizing
+ 
+  BOX SIZING
+
 */
 
 html,
@@ -22,11 +24,12 @@ dl,
 dt,
 dd,
 textarea,
-input[type="text"],
-input[type="tel"],
 input[type="email"],
-input[type="url"],
+input[type="number"],
 input[type="password"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
 .border-box {
   box-sizing: border-box;
 }

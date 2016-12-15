@@ -1,6 +1,7 @@
 /*
 
    FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
 
 */
 
@@ -39,6 +40,12 @@ code, .code {
                monospace;
 }
 
+.courier {
+  font-family: 'Courier Next',
+               courier,
+               monospace;
+}
+
 
 /* Sans-Serif Typefaces */
 
@@ -47,8 +54,19 @@ code, .code {
                sans-serif;
 }
 
+.avenir {
+  font-family: 'avenir next', avenir,
+               sans-serif;
+}
+
 
 /* Serif Typefaces */
+
+.athelas {
+  font-family: athelas,
+               georgia,
+               serif;
+}
 
 .georgia {
   font-family: georgia,
@@ -72,6 +90,11 @@ code, .code {
 
 .garamond {
   font-family: garamond,
+               serif;
+}
+
+.baskerville {
+  font-family: baskerville,
                serif;
 }
 

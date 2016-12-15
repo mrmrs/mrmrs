@@ -45,3 +45,97 @@
   -webkit-animation: shimmer 20s ease-in-out infinite;
   animation: shimmer 20s ease-in-out infinite; }
 
+
+/* CUBE */
+  .rotator .face {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    text-align: center;
+    line-height: 128px;
+    font-size: 1rem;
+  }
+
+  .rotator .face1 { 
+    outline: 1px solid var(--pink); 
+    -webkit-transform: translateZ(64px);                                
+  }
+  .rotator .face2 { 
+    outline: 1px solid var(--red); 
+    -webkit-transform: rotateY(90deg) translateZ(64px);                 
+  }
+  .rotator .face3 { 
+    outline: 1px solid var(--gold); 
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(64px);  
+  }
+  .rotator .face4 { 
+    outline: 1px solid var(--purple); 
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(64px); }
+  .rotator .face5 { 
+    outline: 1px solid var(--orange); 
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(64px); }
+  .rotator .face6 { 
+    outline: 1px solid var(--light-purple); 
+    -webkit-transform: rotateX(-90deg) translateZ(64px);                }
+
+@-webkit-keyframes spincube {
+    from,to  { -webkit-transform: rotateX(-45deg) rotateY(0deg) rotateZ(-45deg); }
+    16%      { -webkit-transform: rotateY(-135deg);                           }
+    33%      { -webkit-transform: rotateY(-135deg) rotateZ(135deg);            }
+    50%      { -webkit-transform: rotateY(-225deg) rotateZ(225deg);           }
+    66%      { -webkit-transform: rotateY(45deg) rotateX(135deg);             }
+    83%      { -webkit-transform: rotateX(0deg);                            }
+  }
+
+@-webkit-keyframes moveside-b {
+    from,to  { -webkit-transform: translateZ(128px); }
+    16%      { -webkit-transform: translateZ(96px);                           }
+    33%      { -webkit-transform: translateZ(64px);            }
+    50%      { -webkit-transform: translateZ(48px);           }
+    66%      { -webkit-transform: translateZ(64px);             }
+    83%      { -webkit-transform: translateZ(96px);            }
+  }
+
+@-webkit-keyframes moveside-a {
+    from,to  { -webkit-transform: translateZ(-64px); }
+    16%      { -webkit-transform: translateZ(-60px);                           }
+    33%      { -webkit-transform: translateZ(-56px);            }
+    50%      { -webkit-transform: translateZ(-48px);           }
+    66%      { -webkit-transform: translateZ(-56px);             }
+    83%      { -webkit-transform: translateZ(-60px);            }
+  }
+
+  .rotator {
+    -webkit-animation-name: spincube;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 12s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 64px 64px 0;
+    position: relative;
+  }
+
+.xray { 
+  background-image:url(http://mrmrs.io/photos/x3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.xray:hover {
+  background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTRDOTY4N0U2N0VFMTFFNjg2MzZDQjkwNkQ4MjgwMEIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTRDOTY4N0Q2N0VFMTFFNjg2MzZDQjkwNkQ4MjgwMEIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NjcyQkQ3NjY3QzUxMUU2QjJCQ0UyNDA4MTAwMjE3MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NjcyQkQ3NzY3QzUxMUU2QjJCQ0UyNDA4MTAwMjE3MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsBS+GMAAAAjSURBVHjaYvz//z8DLsD4gcGXiYEAGBIKGBne//fFpwAgwAB98AaF2pjlUQAAAABJRU5ErkJggg==) repeat top left;
+  background-repeat:repeat;
+  background-size: unset;
+}
+.xray:hover *  {
+  outline: 1px solid var(--black-50);
+  color: #111!important;
+}
+
+.rotator-wrapper {
+  height: 384px;
+}
+
+@media (--breakpoint-not-small) {
+  .rotator-wrapper { 
+    height: 512px;
+  }
+}

@@ -1,12 +1,14 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
-
 /*
 
-    POSITIONING
+   POSITIONING
+   Docs: http://tachyons.io/docs/layout/position/
 
- */
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
 
 .static { position: static; }
 .relative  { position: relative; }
