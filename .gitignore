@@ -21,3 +21,6 @@ Temporary Items
 .apdisk
 
 node_modules*
+
+# Generated Jekyll site
+_site
