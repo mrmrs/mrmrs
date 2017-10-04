@@ -1,393 +1,215 @@
-<!DOCTYPE html>
-<meta charset='utf-8'>
-<title></title>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
-<meta name='generator' content='Compositor X0'>
-<meta name='twitter:card' content='summary' />
-<style>*{ box-sizing:border-box }.x0{font-family:-apple-system, BlinkMacSystemFont, Roboto, sans-serif;line-height:1.5;color:#111;margin:0}
-.BasicGrow-tiles-x12kzhy7:hover{transition:transform .25s ease-in-out}
-.BasicGrow-tiles-x12ly1cl:focus{transition:transform .25s ease-in-out}
-.BasicGrow-tiles-x16tlyt7{background-image:url(https://s3-us-west-1.amazonaws.com/c8r-x0/colors.gif)}
-.BasicGrow-tiles-x1bjjsk4{background-image:url(https://s3-us-west-1.amazonaws.com/c8r-x0/mrsjxn.png)}
-.BasicGrow-tiles-x1feqkw0{background-image:url(http://mrmrs.github.io/up/images/IMG_2588.JPG)}
-.BasicGrow-tiles-x1hjd5bo{transition:transform .25s ease-in-out}
-.BasicGrow-tiles-xiwxkki{background-image:url(https://s3-us-west-1.amazonaws.com/c8r-x0/gradient.png)}
-.BasicGrow-tiles-xvht68z{background-image:url(https://s3-us-west-1.amazonaws.com/gfffs/diamonds-2.gif)}
-.PromoBadge-styleguide-xp7h0p6{font-family:-apple-system, Roboto, Helvetica, sans-serif}
-.align-items-center{align-items:center}
-.background-repeat-no-repeat{background-repeat:no-repeat}
-.bbs-solid{border-bottom-style:solid}
-.bbw-1px{border-bottom-width:1px}
-.bg-cover{background-size:cover}
-.bg-gray1{background-color:#eee}
-.bg-gray{background-color:#111}
-.bg-white{background-color:white}
-.bp-center_center{background-position:center center}
-.bp-center{background-position:center}
-.c-black{color:black}
-.c-inherit{color:inherit}
-.c-rgba0_0_0_p7{color:rgba(0,0,0,.7)}
-.c-white{color:white}
-.db{display:block}
-.df{display:flex}
-.dib{display:inline-block}
-.flex-wrap-wrap{flex-wrap:wrap}
-.focus-transform-scale1p025:focus{transform:scale(1.025)}
-.fs-8px{font-size:8px}
-.fs1{font-size:14px}
-.fs2{font-size:16px}
-.fs3{font-size:20px}
-.fs4{font-size:24px}
-.fs5{font-size:32px}
-.fw-700{font-weight:700}
-.h-100P{height:100%}
-.h-1em{height:1em}
-.h0{height:0}
-.hover-transform-scale1p025:hover{transform:scale(1.025)}
-.justify-content-flex-end{justify-content:flex-end}
-.letter-spacing-p2em{letter-spacing:.2em}
-.lh-1p125{line-height:1.125}
-.m0{margin:0}
-.mauto{margin:auto}
-.max-width-1024px{max-width:1024px}
-.mb2{margin-bottom:8px}
-.mb3{margin-bottom:16px}
-.mb4{margin-bottom:32px}
-.ml-16px{margin-left:-16px}
-.ml-8px{margin-left:-8px}
-.ml3{margin-left:16px}
-.mlauto{margin-left:auto}
-.mr-16px{margin-right:-16px}
-.mr-8px{margin-right:-8px}
-.mr2{margin-right:8px}
-.mr3{margin-right:16px}
-.mt3{margin-top:16px}
-.p2{padding:8px}
-.p3{padding:16px}
-.pb0{padding-bottom:0}
-.pb1{padding-bottom:4px}
-.pb2{padding-bottom:8px}
-.pb3{padding-bottom:16px}
-.pb50P{padding-bottom:50%}
-.pb5{padding-bottom:64px}
-.pb6{padding-bottom:128px}
-.pl2{padding-left:8px}
-.pl3{padding-left:16px}
-.pl4{padding-left:32px}
-.pr2{padding-right:8px}
-.pr3{padding-right:16px}
-.pr4{padding-right:32px}
-.pt0{padding-top:0}
-.pt2{padding-top:8px}
-.pt5{padding-top:64px}
-.pt6{padding-top:128px}
-.text-decoration-none{text-decoration:none}
-.text-transform-uppercase{text-transform:uppercase}
-.transform-scale1{transform:scale(1)}
-.w-100P{width:100%}
-.w-1em{width:1em}
-.w-50P{width:50%}
-@media screen and (min-width:32em){.sm-fs2{font-size:16px}}
-@media screen and (min-width:32em){.sm-fs4{font-size:24px}}
-@media screen and (min-width:32em){.sm-fs6{font-size:48px}}
-@media screen and (min-width:32em){.sm-ml-32px{margin-left:-32px}}
-@media screen and (min-width:32em){.sm-ml4{margin-left:32px}}
-@media screen and (min-width:32em){.sm-mr-32px{margin-right:-32px}}
-@media screen and (min-width:32em){.sm-mr4{margin-right:32px}}
-@media screen and (min-width:32em){.sm-p4{padding:32px}}
-@media screen and (min-width:32em){.sm-w-50P{width:50%}}
-@media screen and (min-width:48em){.md-fs3{font-size:20px}}
-@media screen and (min-width:48em){.md-fs5{font-size:32px}}
-@media screen and (min-width:48em){.md-fs6{font-size:48px}}
-@media screen and (min-width:48em){.md-fs8{font-size:96px}}
-@media screen and (min-width:48em){.md-p5{padding:64px}}
-@media screen and (min-width:96em){.xl-fs7{font-size:64px}}</style>
-
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-
-<body class='x0'>
-<nav class="Right-nav pt2 pb2 c-black bg-white">
-  <div class="mauto pl4 pr4 max-width-1024px">
-    <div class="justify-content-flex-end align-items-center df flex-wrap-wrap ml-16px mr-16px sm-ml-32px sm-mr-32px"><a class="ml3 mr3 sm-ml4 sm-mr4 mt3 mb3 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="/#work">Work</a><a class="ml3 mr3 sm-ml4 sm-mr4 mt3 mb3 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://mrmrs.github.io/writing">Writing</a>
-      <a
-        class="ml3 mr3 sm-ml4 sm-mr4 mt3 mb3 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="https://github.com/mrmrs">GitHub</a></div>
-  </div>
-</nav>
-<header class="Bold-header pt6 pb6 c-rgba0_0_0_p7 bg-gray1">
-  <div class="mauto pl4 pr4 max-width-1024px">
-    <h4 class="m0 fs2 md-fs3 lh-1p125 fw-700">Adam Morse. Designer Based in London.</h4>
-    <h2 class="m0 fs5 sm-fs6 md-fs8 mb3 lh-1p125 fw-700">Trying to make the web: fast, readable, & responsive.</h2>
-  </div>
-</header>
-<header class="Basic-header pt5 pb3" id="#work">
-  <div class="mauto pl4 pr4 max-width-1024px">
-    <h2 class="m0 fs3 lh-1p125 fw-700">Featured Projects</h2>
-  </div>
-</header>
-<section class="Simple-cards pt0 pb0">
-  <div class="mauto pl4 pr4 max-width-1024px">
-    <div class="df flex-wrap-wrap ml-16px mr-16px mt3 mb3">
-      <div class="w-50P pl3 pr3 mb4">
-        <a class="db text-decoration-none c-inherit" href="http://compositor.io">
-          <div class="w-100P">
-            <div class="db w-100P h0 pb50P background-repeat-no-repeat bg-cover bp-center mb2" style="background-image:url(http://compositor.s3.amazonaws.com/images/bikeshed-hero-2.jpg)"></div>
-            <h2 class="m0 pt2 pb2 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Compositor</h2>
-            <p class="m0 pb3">Beautiful, Fast, & Simple GitHub Project Pages</p>
-          </div>
-        </a>
-      </div>
-      <div class="w-50P pl3 pr3 mb4">
-        <a class="db text-decoration-none c-inherit" href="http://tachyons.io">
-          <div class="w-100P">
-            <div class="db w-100P h0 pb50P background-repeat-no-repeat bg-cover bp-center mb2" style="background-image:url(https://s3-us-west-1.amazonaws.com/c8r-x0/tachyons-dark.png)"></div>
-            <h2 class="m0 pt2 pb2 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Tachyons</h2>
-            <p class="m0 pb3">Functional CSS Toolkit</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="BasicGrow-tiles">
-  <div class="mauto pl4 pr4 max-width-1024px">
-    <div class="df flex-wrap-wrap ml-8px mr-8px">
-      <div class="w-100P sm-w-50P pl2 pr2 mb3">
-        <a class="BasicGrow-tiles-x1feqkw0 bp-center_center bg-cover transform-scale1 BasicGrow-tiles-x1hjd5bo h-100P hover-transform-scale1p025 BasicGrow-tiles-x12kzhy7 focus-transform-scale1p025 BasicGrow-tiles-x12ly1cl db text-decoration-none c-inherit pt5 pb5"
-          href="http://mrmrs.github.io/up">
-          <div class="p3 sm-p4 md-p5">
-            <h2 class="m0 fs5 md-fs6 xl-fs7 lh-1p125 fw-700">Up & in Thirds</h2>
-            <p class="m0">A collection of photographs</p>
-          </div>
-        </a>
-      </div>
-      <div class="w-100P sm-w-50P pl2 pr2 mb3">
-        <a class="BasicGrow-tiles-x1bjjsk4 bp-center_center bg-cover transform-scale1 BasicGrow-tiles-x1hjd5bo h-100P hover-transform-scale1p025 BasicGrow-tiles-x12kzhy7 focus-transform-scale1p025 BasicGrow-tiles-x12ly1cl db text-decoration-none c-inherit pt5 pb5"
-          href="http://mrsjxn.com">
-          <div class="p3 sm-p4 md-p5">
-            <h2 class="m0 fs5 md-fs6 xl-fs7 lh-1p125 fw-700">&nbsp;</h2>
-            <p class="m0">&nbsp;</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="BasicGrow-tiles">
-  <div class="mauto pl4 pr4 max-width-1024px">
-    <div class="df flex-wrap-wrap ml-8px mr-8px">
-      <div class="w-100P pl2 pr2 mb3">
-        <a class="BasicGrow-tiles-xvht68z bp-center_center bg-cover transform-scale1 BasicGrow-tiles-x1hjd5bo h-100P hover-transform-scale1p025 BasicGrow-tiles-x12kzhy7 focus-transform-scale1p025 BasicGrow-tiles-x12ly1cl db text-decoration-none c-inherit pt5 pb5"
-          href="http://gfffs.com">
-          <div class="p3 sm-p4 md-p5">
-            <h2 class="m0 fs5 md-fs6 xl-fs7 lh-1p125 fw-700">Gfffs</h2>
-            <p class="m0">Hi-def gifs for the super-bored.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="BasicGrow-tiles">
-  <div class="mauto pl4 pr4 max-width-1024px">
-    <div class="df flex-wrap-wrap ml-8px mr-8px">
-      <div class="w-100P sm-w-50P pl2 pr2 mb3">
-        <a class="BasicGrow-tiles-xiwxkki bp-center_center bg-cover transform-scale1 BasicGrow-tiles-x1hjd5bo h-100P hover-transform-scale1p025 BasicGrow-tiles-x12kzhy7 focus-transform-scale1p025 BasicGrow-tiles-x12ly1cl db text-decoration-none c-inherit pt5 pb5"
-          href="http://mrmrs.github.io/gradients">
-          <div class="p3 sm-p4 md-p5">
-            <h2 class="m0 fs5 md-fs6 xl-fs7 lh-1p125 fw-700">Gradients</h2>
-            <p class="m0">Curated css background gradients</p>
-          </div>
-        </a>
-      </div>
-      <div class="w-100P sm-w-50P pl2 pr2 mb3">
-        <a class="BasicGrow-tiles-x16tlyt7 bp-center_center bg-cover transform-scale1 BasicGrow-tiles-x1hjd5bo h-100P hover-transform-scale1p025 BasicGrow-tiles-x12kzhy7 focus-transform-scale1p025 BasicGrow-tiles-x12ly1cl db text-decoration-none c-inherit pt5 pb5"
-          href="http://clrs.cc">
-          <div class="p3 sm-p4 md-p5">
-            <h2 class="m0 fs5 md-fs6 xl-fs7 lh-1p125 fw-700">Colors</h2>
-            <p class="m0">A better set of defaults for the web.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="Basic-linkList">
-  <div class="mauto pl4 pr4 max-width-1024px pt5 pb5">
-    <div class="mb2">
-      <h2 class="bbw-1px bbs-solid m0 pb1 mb3 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Writing</h2>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://mrmrs.github.io/writing/2016/03/24/scalable-css/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Css and Scalability</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">Reading a css file from start to finish will often times reveal in chronological order how a defined system breaks down…</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://mrmrs.github.io/writing/2016/03/23/the-veil-of-ignorance/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">The Veil of Ignorance</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">Let’s pretend you were instantly able to re-create American society in totality, and you could do it in whatever way you wanted. You could make (or eliminate) whatever laws you desired, and you could implement whatever financial and judicial
-            structures you believed would work best. However, you must do this under a magical veil of ignorance…</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://mrmrs.github.io/writing/2015/10/06/design-systems/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Design Systems</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">While 5 and 10 are common units because we are (generally) born with ten digits on our hands - it seems more suitable to use 16 as a base measurement for this medium. Time in music is most commonly divided this way as well. 1/16, 1/8, 1/4, 1/2,
-            and whole notes. These paralells are not a coincidence. Math and music are the sisters of design…</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://mrmrs.github.io/writing/2015/07/27/too-many-tools/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Too Many Tools and Frameworks</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">Theodore Sturgeon was a science fiction author, critic, and the basis for Kurt Vonnegut's recurring character Kilgore Trout. He was prolific, authoring over 200 pieces himself and critiquing around 400 others. His first piece came out in 1939
-            - a time in which science fiction was not widely respected within the field of literature. In 1958 he published a piece in Venture proclaiming what he called 'Sturgeon's Revelation…'</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://mrmrs.github.io/writing/2016/03/17/webfonts/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Webfonts</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">User-testing is an important part of the design process. It allows you to both hear what users have to say as well as observe how they use a product. It can help you separate your ego and desires from the problem solving at hand…</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://mrmrs.github.io/writing/2015/08/10/designing-for-the-web/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Web Design Process</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">1) Try to identify the problem that needs to be solved. 2) Do research. 3) Create some content…</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://mrmrs.github.io/writing/2015/05/14/what-are-classes-for/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">What are Classes for?</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">For every property you add to a class, the less reusable it becomes…</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="https://hackdesign.org/lessons/49">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Hack Design #51: Vim as a Design Tool</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">Touching the mouse is bad for productivity. Do it as little as possible or not at all…</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="Basic-linkList">
-  <div class="mauto pl4 pr4 max-width-1024px pt5 pb5">
-    <div class="mb2">
-      <h2 class="bbw-1px bbs-solid m0 pb1 mb3 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Screencasts</h2>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://designbytyping.com/2013/12/24/vim-project-setup/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Vim Project Setup</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">window management, saving sessions, opening files, saving files and more</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://designbytyping.com/2013/12/24/vim-project-setup/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Editing output from an external process with Vim</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">unix, :r, :!, visual-block mode, recording a macro</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://designbytyping.com/2014/05/14/svg-and-vim/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Fun with svg & Vim</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">registers, macros, :bufdo</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://designbytyping.com/2014/09/30/hsla-and-vim/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Building an HSLA visualizer in under 5 minutes</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">visual-block mode, macros, ctrl-a</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://designbytyping.com/2014/09/24/responsive-photo-grid-under-5-minutes/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Responsive photo grid in 5:20</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">gulp, npm, grid, tachyons, visual block, :%s</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://designbytyping.com/2014/09/22/designing-in-the-browser/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Designing in the browser</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">gulp, npm, tachyons</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://designbytyping.com/2014/09/13/vim-delete/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Deleting an entire file in Vim</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">:%d, ggdG</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="Basic-linkList">
-  <div class="mauto pl4 pr4 max-width-1024px pt5 pb5">
-    <div class="mb2">
-      <h2 class="bbw-1px bbs-solid m0 pb1 mb3 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Interviews</h2>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="https://medium.com/type-thursday/three-considerations-to-make-your-typography-more-accessible-58017bc88b4">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Type Thursday</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">Three Considerations to Make Your Typography More Accessible</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="https://spec.fm/podcasts/design-details/16190">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Design Details</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">Lego Bits</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="http://webfriends.io/season/1/episode/8/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">Web Friends</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">The Authentic Adam Morse</p>
-        </a>
-      </div>
-      <div class="mb2">
-        <a class="mb2 dib fw-700 text-decoration-none pt2 pb2 c-inherit" href="https://viewsourc.es/2015/06/04/episode-7-vim/">
-          <h2 class="m0 fs3 sm-fs4 md-fs5 lh-1p125 fw-700">View Sources</h2>
-          <p class="m0 fs1 sm-fs2 md-fs3">Vim as a Design Tool</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="Basic-socialLinks">
-  <div class="mauto pl4 pr4 max-width-1024px">
-    <div class="df flex-wrap-wrap ml-16px mr-16px">
-      <a class="pl3 pr3 pt2 pb2 dib fw-700 text-decoration-none c-inherit" href="http://github.com/mrmrs"><img class="dib w-1em h-1em m0 fs4" src="https://icon.now.sh/github/111" width="1em" height="1em" /></a>
-      <a class="pl3 pr3 pt2 pb2 dib fw-700 text-decoration-none c-inherit" href="http://twitter.com/mrmrs_"><img class="dib w-1em h-1em m0 fs4" src="https://icon.now.sh/twitter/111" width="1em" height="1em" /></a>
-      <a class="pl3 pr3 pt2 pb2 dib fw-700 text-decoration-none c-inherit" href="http://soundcloud.com/mrsjxn"><img class="dib w-1em h-1em m0 fs4" src="https://icon.now.sh/soundcloud/111" width="1em" height="1em" /></a>
-      <a class="pl3 pr3 pt2 pb2 dib fw-700 text-decoration-none c-inherit" href="http://dribbble.com/mrmrs"><img class="dib w-1em h-1em m0 fs4" src="https://icon.now.sh/dribbble/111" width="1em" height="1em" /></a>
-      <a class="pl3 pr3 pt2 pb2 dib fw-700 text-decoration-none c-inherit" href="http://medium.com/@mrmrs_"><img class="dib w-1em h-1em m0 fs4" src="https://icon.now.sh/medium/111" width="1em" height="1em" /></a>
-      <a class="pl3 pr3 pt2 pb2 dib fw-700 text-decoration-none c-inherit" href="http://instagram.com/mrmrs_"><img class="dib w-1em h-1em m0 fs4" src="https://icon.now.sh/instagram/111" width="1em" height="1em" /></a>
-    </div>
-  </div>
-</div>
-<div class="PromoBadge-styleguide c-white bg-gray">
-  <div class="align-items-center df p2">
-    <a class="db text-decoration-none c-inherit mlauto" href="http://compositor.io">
-      <div class="align-items-center df">
-        <p class="PromoBadge-styleguide-xp7h0p6 fs-8px fw-700 text-transform-uppercase letter-spacing-p2em m0 mr2">Built with Compositor</p>
-        <div class=""><svg class="db m0" viewBox="-12 -12 24 24" width="24" height="24" vectorEffect="non-scaling-stroke"><rect class="" x="-12" y="-12" width="24" height="24" fill="currentcolor" rx="1" ry="1" /><rect class="" x="-8" y="-4" width="16" height="8" fill="#111" rx="0.5" ry="0.5" /><g class="" fill="none" stroke="currentcolor" strokeWidth="0.5"><path class="" d="M -4.8 -1.8 L -1.2 1.8 M -1.2 -1.8 L -4.8 1.8" /><path class="" d="M 3 -2 A 2 2 0 0 0 3 2 A 2 2 0 0 0 3 -2 M 4.5 -1.5 L 1.5 1.5" /></g></svg></div>
-      </div>
-    </a>
-  </div>
-</div>
-    <script>
+<!DOCTYPE html><html><head><title>Adam Morse - Designer in London</title><meta charset="utf-8"/><meta name="generator" content="Compositor x0"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description"/><style>*{box-sizing:border-box}body{margin:0}.z0Flex_13yk34y{padding-left:64px;padding-right:64px;padding-top:32px;padding-bottom:32px} .z0Flex_mdmmr9{} .z0Flex_k206nx{align-items:center} .z0Flex_6hoen5{justify-content:} .z0Flex_1agckgk{flex-direction:row} .z0Flex_1rr4jcp{display:flex} .z0Box_13yk34y{padding-left:64px;padding-right:64px;padding-top:32px;padding-bottom:32px} .z0Box_mdmmr9{} .z0Box_1npp29g{margin-right:auto} .z0Box_102tqs0{width:32px} .z0Div_mdmmr9{} .z0Svg_mdmmr9{} .z0Svg_3h4hbk{background-color:undefined;color:undefined} .z0Svg_14xewhm:hover{color:halloween;transition:color .25s ease-in} .z0Svg_f2dgne{transition:color .25s ease-in} .z0Nav_16e1kl6{margin-left:auto} .z0Nav_mdmmr9{} .z0Box_1y4iusb{margin-right:32px} .z0NavLink_i2atn7{font-size:14px} .z0NavLink_c65ziq{padding-left:32px;padding-top:0px;padding-bottom:0px} .z0NavLink_1wdoa1p{color:black} .z0NavLink_1bkox09{display:inline-block;font-weight:bold;letter-spacing:.05em;text-decoration:none;text-transform:uppercase} .z0Header_126pkt5{padding-left:64px;padding-right:64px;padding-top:6px;padding-bottom:6px} .z0Header_1qq5jeq{background-color:bg;color:black} .z0Header_mdmmr9{} .z0Container_gx1hqw{margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px} .z0Container_mdmmr9{} .z0Container_6osar3{max-width:72rem} .z0Box_1vjn2v1{padding-left:16px;padding-right:16px} .z0H1_1o2ezep{font-size:32px} @media screen and (min-width: 40em){.z0H1_12jqrxu{font-size:48px}} @media screen and (min-width: 52em){.z0H1_ngp8oq{font-size:64px}} .z0H1_1bmf5hr{margin-top:0px;margin-bottom:0px}
+.z0H1_1wdoa1p{color:black} .z0H1_m6ozqw{line-height:1} .z0Box_1rl2r0i{padding-left:64px;padding-right:64px} .z0Box_w8x2v6{width:100%} .z0Box_8ctdvs{background-color:} .z0Container_tt19w7{font-size:12px} .z0Container_ootift{margin-left:auto;margin-right:auto;padding-top:5px;padding-left:16px;padding-right:16px} .z0Container_1wdoa1p{color:black} .z0H4_1ycl9dg{font-size:16px} .z0H4_mdmmr9{} .z0H4_1wdoa1p{color:black} .z0H4_163zd3z{border-color:black} .z0H4_11gibmt{text-transform:uppercase} @media screen and (min-width: 40em){.z0Box_pq7l2s{width:100%}} @media screen and (min-width: 52em){.z0Box_1snu2vi{width:50%}} .z0Link_i2atn7{font-size:14px} .z0Link_iisq1y{padding-left:undefined;padding-right:undefined;padding-top:undefined;padding-bottom:undefined} .z0Link_1wdoa1p{color:black} .z0Link_mdmmr9{} .z0Link_jm3649:focus{} .z0Link_15081t5:hover{} .z0Link_4kbyf6:active{} .z0Link_16bnkq{display:block;font-weight:bold;text-decoration:none;transition:opacity .2s ease-in} .z0Link_1l0da3s:hover{opacity:0.7;transition:opacity .2s ease-in-out} .z0AspectRatio_1dte17j{padding-bottom:56.25%} .z0AspectRatio_8pfw7x{background-color:bg} .z0AspectRatio_leueqe{height:0;position:relative} .z0AspectRatioObject_mdmmr9{} .z0AspectRatioObject_w8x2v6{width:100%} .z0AspectRatioObject_hqpzos{background-position:center center;background-repeat:no-repeat;background-size:cover;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%} .z0H3_16557ik{font-size:20px} @media screen and (min-width: 40em){.z0H3_55w3hf{font-size:24px}} .z0H3_1u1o96{margin-bottom:0px;margin-top:16px} .z0H3_1wdoa1p{color:black} .z0H3_x1yig9{border-width:0px;border-style:solid} .z0H3_mdmmr9{} .z0P_i2atn7{font-size:14px} @media screen and (min-width: 40em){.z0P_10plfnz{font-size:16px}} .z0P_1m6kqzy{margin-top:0px} .z0P_mdmmr9{} .z0P_1kdxcfv{font-weight:400;max-width:28em} .z0Flex_12zrzid{margin-top:64px} .z0Box_12zrzid{margin-top:64px} .z0Box_i86xbc{width:50%} .z0H4_12s4gt7{margin-top:5px} .z0Ul_w94ir4{margin-bottom:6px;padding-left:0px} .z0Ul_mdmmr9{} .z0Ul_aw2unr{list-style:none} .z0ListItem_mdmmr9{} .z0ListItem_kewhca{border-bottom-width:1px;border-bottom-style:solid} .z0TextLink_1b8l9c0{font-size:24px} .z0TextLink_5jxka6{padding:undefined;padding-left:undefined;padding-right:undefined;padding-top:0px;padding-bottom:0px} .z0TextLink_1wdoa1p{color:black} .z0TextLink_mdmmr9{} .z0TextLink_1pllip6:hover{color:halloween;transition:color .125s ease-out} .z0TextLink_oe8eol:focus{color:halloween} .z0TextLink_4kbyf6:active{} .z0TextLink_xzqok7{cursor:pointer;display:inline-block;font-weight:bold;text-decoration:none;transition:color .125s ease-out} .z0TextLink_i2atn7{font-size:14px} .z0TextLink_c65ziq{padding-left:32px;padding-top:0px;padding-bottom:0px} .z0Flex_1dv9ts4{padding-left:32px;padding-right:32px;padding-top:16px;padding-bottom:16px} .z0Box_1dv9ts4{padding-left:32px;padding-right:32px;padding-top:16px;padding-bottom:16px} .z0Svg_16d3ta3:hover{color:#ff5a28;transition:color .25s ease-in} .z0Box_4zbkq4{margin-right:16px} .z0NavLink_1nkieb7{padding-left:16px;padding-top:0px;padding-bottom:0px} .z0NavLink_35iemg{color:#1d0016} .z0Header_11vhgrl{padding-left:32px;padding-right:32px;padding-top:128px;padding-bottom:128px} .z0Header_12sm5qv{background-color:#f2f2f8;color:#1d0016} .z0Container_bpfrzz{margin-left:auto;margin-right:auto;padding-left:8px;padding-right:8px}
+.z0Box_ywo3zt{padding-left:8px;padding-right:8px}
+.z0H1_35iemg{color:#1d0016}
+.z0Box_3ct8mo{padding-left:32px;padding-right:32px}
+.z0Container_1jdd6it{margin-left:auto;margin-right:auto;padding-top:64px;padding-left:8px;padding-right:8px}
+.z0Container_35iemg{color:#1d0016}
+.z0H4_35iemg{color:#1d0016}
+.z0H4_1yj88ak{border-color:#1d0016}
+.z0Link_35iemg{color:#1d0016}
+.z0AspectRatio_1f4nkmj{background-color:#f2f2f8}
+.z0H3_1oe3gjs{margin-bottom:0px;margin-top:8px}
+.z0H3_35iemg{color:#1d0016}
+.z0Flex_6dz4ec{margin-top:32px}
+.z0Box_6dz4ec{margin-top:32px}
+.z0H4_12zrzid{margin-top:64px}
+.z0Ul_m2eadc{margin-bottom:128px;padding-left:0px}
+.z0TextLink_35iemg{color:#1d0016}
+.z0TextLink_xwzhil:hover{color:#ff5a28;transition:color .125s ease-out}
+.z0TextLink_1xabmv6:focus{color:#ff5a28}
+.z0TextLink_1nkieb7{padding-left:16px;padding-top:0px;padding-bottom:0px}
+.z0Div_mdmmr9{}
+.z0Svg_mdmmr9{}
+.z0Svg_3h4hbk{background-color:undefined;color:undefined}
+.z0Svg_14xewhm:hover{color:halloween;transition:color .25s ease-in}
+.z0Svg_f2dgne{transition:color .25s ease-in}
+.z0Nav_16e1kl6{margin-left:auto}
+.z0Nav_mdmmr9{}
+.z0NavLink_tt19w7{font-size:12px}
+@media screen and (min-width: 40em){.z0NavLink_975b7n{font-size:14px}}
+.z0NavLink_c65ziq{padding-left:32px;padding-top:0px;padding-bottom:0px}
+.z0NavLink_1wdoa1p{color:black}
+.z0NavLink_1bkox09{display:inline-block;font-weight:bold;letter-spacing:.05em;text-decoration:none;text-transform:uppercase}
+.z0Header_126pkt5{padding-left:64px;padding-right:64px;padding-top:6px;padding-bottom:6px}
+.z0Header_1qq5jeq{background-color:bg;color:black}
+.z0Header_mdmmr9{}
+.z0Container_gx1hqw{margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px}
+.z0Container_mdmmr9{}
+.z0Container_6osar3{max-width:72rem}
+.z0H1_1b8l9c0{font-size:24px}
+@media screen and (min-width: 40em){.z0H1_12jqrxu{font-size:48px}}
+@media screen and (min-width: 52em){.z0H1_ngp8oq{font-size:64px}}
+.z0H1_1bmf5hr{margin-top:0px;margin-bottom:0px}
+.z0H1_1wdoa1p{color:black}
+.z0H1_m6ozqw{line-height:1}
+.z0Container_tt19w7{font-size:12px}
+.z0Container_ootift{margin-left:auto;margin-right:auto;padding-top:5px;padding-left:16px;padding-right:16px}
+.z0Container_1wdoa1p{color:black}
+.z0H4_1ycl9dg{font-size:16px}
+.z0H4_mdmmr9{}
+.z0H4_1wdoa1p{color:black}
+.z0H4_163zd3z{border-color:black}
+.z0H4_11gibmt{text-transform:uppercase}
+.z0Link_i2atn7{font-size:14px}
+.z0Link_iisq1y{padding-left:undefined;padding-right:undefined;padding-top:undefined;padding-bottom:undefined}
+.z0Link_1wdoa1p{color:black}
+.z0Link_mdmmr9{}
+.z0Link_jm3649:focus{}
+.z0Link_15081t5:hover{}
+.z0Link_4kbyf6:active{}
+.z0Link_16bnkq{display:block;font-weight:bold;text-decoration:none;transition:opacity .2s ease-in}
+.z0Link_1l0da3s:hover{opacity:0.7;transition:opacity .2s ease-in-out}
+.z0AspectRatio_1dte17j{padding-bottom:56.25%}
+.z0AspectRatio_8pfw7x{background-color:bg}
+.z0AspectRatio_leueqe{height:0;position:relative}
+.z0AspectRatioObject_mdmmr9{}
+.z0AspectRatioObject_w8x2v6{width:100%}
+.z0AspectRatioObject_hqpzos{background-position:center center;background-repeat:no-repeat;background-size:cover;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}
+.z0H3_16557ik{font-size:20px}
+@media screen and (min-width: 40em){.z0H3_55w3hf{font-size:24px}}
+.z0H3_1u1o96{margin-bottom:0px;margin-top:16px}
+.z0H3_1wdoa1p{color:black}
+.z0H3_x1yig9{border-width:0px;border-style:solid}
+.z0H3_mdmmr9{}
+.z0P_i2atn7{font-size:14px}
+@media screen and (min-width: 40em){.z0P_10plfnz{font-size:16px}}
+.z0P_1m6kqzy{margin-top:0px}
+.z0P_mdmmr9{}
+.z0P_1kdxcfv{font-weight:400;max-width:28em}
+.z0H4_12s4gt7{margin-top:5px}
+.z0Ul_w94ir4{margin-bottom:6px;padding-left:0px}
+.z0Ul_mdmmr9{}
+.z0Ul_aw2unr{list-style:none}
+.z0ListItem_mdmmr9{}
+.z0ListItem_kewhca{border-bottom-width:1px;border-bottom-style:solid}
+.z0TextLink_1b8l9c0{font-size:24px}
+.z0TextLink_5jxka6{padding:undefined;padding-left:undefined;padding-right:undefined;padding-top:0px;padding-bottom:0px}
+.z0TextLink_1wdoa1p{color:black}
+.z0TextLink_mdmmr9{}
+.z0TextLink_1pllip6:hover{color:halloween;transition:color .125s ease-out}
+.z0TextLink_oe8eol:focus{color:halloween}
+.z0TextLink_4kbyf6:active{}
+.z0TextLink_xzqok7{cursor:pointer;display:inline-block;font-weight:bold;text-decoration:none;transition:color .125s ease-out}
+.z0TextLink_i2atn7{font-size:14px}
+.z0TextLink_c65ziq{padding-left:32px;padding-top:0px;padding-bottom:0px}
+.z0Svg_16d3ta3:hover{color:#ff5a28;transition:color .25s ease-in}
+.z0NavLink_1nkieb7{padding-left:16px;padding-top:0px;padding-bottom:0px}
+.z0NavLink_35iemg{color:#1d0016}
+.z0Header_11vhgrl{padding-left:32px;padding-right:32px;padding-top:128px;padding-bottom:128px}
+.z0Header_12sm5qv{background-color:#f2f2f8;color:#1d0016}
+.z0Container_bpfrzz{margin-left:auto;margin-right:auto;padding-left:8px;padding-right:8px}
+.z0H1_35iemg{color:#1d0016}
+.z0Container_1jdd6it{margin-left:auto;margin-right:auto;padding-top:64px;padding-left:8px;padding-right:8px}
+.z0Container_35iemg{color:#1d0016}
+.z0H4_35iemg{color:#1d0016}
+.z0H4_1yj88ak{border-color:#1d0016}
+.z0Link_35iemg{color:#1d0016}
+.z0AspectRatio_1f4nkmj{background-color:#f2f2f8}
+.z0H3_1oe3gjs{margin-bottom:0px;margin-top:8px}
+.z0H3_35iemg{color:#1d0016}
+.z0H4_12zrzid{margin-top:64px}
+.z0Ul_m2eadc{margin-bottom:128px;padding-left:0px}
+.z0TextLink_35iemg{color:#1d0016}
+.z0TextLink_xwzhil:hover{color:#ff5a28;transition:color .125s ease-out}
+.z0TextLink_1xabmv6:focus{color:#ff5a28}
+.z0TextLink_1nkieb7{padding-left:16px;padding-top:0px;padding-bottom:0px}
+.z0Div_mdmmr9{}
+.z0Svg_mdmmr9{}
+.z0Svg_3h4hbk{background-color:undefined;color:undefined}
+.z0Svg_14xewhm:hover{color:halloween;transition:color .25s ease-in}
+.z0Svg_f2dgne{transition:color .25s ease-in}
+.z0Nav_16e1kl6{margin-left:auto}
+.z0Nav_mdmmr9{}
+.z0NavLink_tt19w7{font-size:12px}
+@media screen and (min-width: 40em){.z0NavLink_975b7n{font-size:14px}}
+.z0NavLink_c65ziq{padding-left:32px;padding-top:0px;padding-bottom:0px}
+.z0NavLink_1wdoa1p{color:black}
+.z0NavLink_1bkox09{display:inline-block;font-weight:bold;letter-spacing:.05em;text-decoration:none;text-transform:uppercase}
+.z0Header_126pkt5{padding-left:64px;padding-right:64px;padding-top:6px;padding-bottom:6px}
+.z0Header_1qq5jeq{background-color:bg;color:black}
+.z0Header_mdmmr9{}
+.z0Container_gx1hqw{margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px}
+.z0Container_mdmmr9{}
+.z0Container_6osar3{max-width:72rem}
+.z0H1_1o2ezep{font-size:32px}
+@media screen and (min-width: 40em){.z0H1_12jqrxu{font-size:48px}}
+@media screen and (min-width: 52em){.z0H1_ngp8oq{font-size:64px}}
+.z0H1_1bmf5hr{margin-top:0px;margin-bottom:0px}
+.z0H1_1wdoa1p{color:black}
+.z0H1_m6ozqw{line-height:1}
+.z0Container_tt19w7{font-size:12px}
+.z0Container_ootift{margin-left:auto;margin-right:auto;padding-top:5px;padding-left:16px;padding-right:16px}
+.z0Container_1wdoa1p{color:black}
+.z0H4_1ycl9dg{font-size:16px}
+.z0H4_mdmmr9{}
+.z0H4_1wdoa1p{color:black}
+.z0H4_163zd3z{border-color:black}
+.z0H4_11gibmt{text-transform:uppercase}
+.z0Link_i2atn7{font-size:14px}
+.z0Link_iisq1y{padding-left:undefined;padding-right:undefined;padding-top:undefined;padding-bottom:undefined}
+.z0Link_1wdoa1p{color:black}
+.z0Link_mdmmr9{}
+.z0Link_jm3649:focus{}
+.z0Link_15081t5:hover{}
+.z0Link_4kbyf6:active{}
+.z0Link_16bnkq{display:block;font-weight:bold;text-decoration:none;transition:opacity .2s ease-in}
+.z0Link_1l0da3s:hover{opacity:0.7;transition:opacity .2s ease-in-out}
+.z0AspectRatio_1dte17j{padding-bottom:56.25%}
+.z0AspectRatio_8pfw7x{background-color:bg}
+.z0AspectRatio_leueqe{height:0;position:relative}
+.z0AspectRatioObject_mdmmr9{}
+.z0AspectRatioObject_w8x2v6{width:100%}
+.z0AspectRatioObject_hqpzos{background-position:center center;background-repeat:no-repeat;background-size:cover;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}
+.z0H3_16557ik{font-size:20px}
+@media screen and (min-width: 40em){.z0H3_55w3hf{font-size:24px}}
+.z0H3_1u1o96{margin-bottom:0px;margin-top:16px}
+.z0H3_1wdoa1p{color:black}
+.z0H3_x1yig9{border-width:0px;border-style:solid}
+.z0H3_mdmmr9{}
+.z0P_i2atn7{font-size:14px}
+@media screen and (min-width: 40em){.z0P_10plfnz{font-size:16px}}
+.z0P_1m6kqzy{margin-top:0px}
+.z0P_mdmmr9{}
+.z0P_1kdxcfv{font-weight:400;max-width:28em}
+.z0H4_12s4gt7{margin-top:5px}
+.z0Ul_w94ir4{margin-bottom:6px;padding-left:0px}
+.z0Ul_mdmmr9{}
+.z0Ul_aw2unr{list-style:none}
+.z0ListItem_mdmmr9{}
+.z0ListItem_kewhca{border-bottom-width:1px;border-bottom-style:solid}
+.z0TextLink_1b8l9c0{font-size:24px}
+.z0TextLink_5jxka6{padding:undefined;padding-left:undefined;padding-right:undefined;padding-top:0px;padding-bottom:0px}
+.z0TextLink_1wdoa1p{color:black}
+.z0TextLink_mdmmr9{}
+.z0TextLink_1pllip6:hover{color:halloween;transition:color .125s ease-out}
+.z0TextLink_oe8eol:focus{color:halloween}
+.z0TextLink_4kbyf6:active{}
+.z0TextLink_xzqok7{cursor:pointer;display:inline-block;font-weight:bold;text-decoration:none;transition:color .125s ease-out}
+.z0TextLink_i2atn7{font-size:14px}
+.z0TextLink_c65ziq{padding-left:32px;padding-top:0px;padding-bottom:0px}
+.z0Svg_16d3ta3:hover{color:#ff5a28;transition:color .25s ease-in}
+.z0NavLink_1nkieb7{padding-left:16px;padding-top:0px;padding-bottom:0px}
+.z0NavLink_35iemg{color:#1d0016}
+.z0Header_11vhgrl{padding-left:32px;padding-right:32px;padding-top:128px;padding-bottom:128px}
+.z0Header_12sm5qv{background-color:#f2f2f8;color:#1d0016}
+.z0Container_bpfrzz{margin-left:auto;margin-right:auto;padding-left:8px;padding-right:8px}
+.z0H1_35iemg{color:#1d0016}
+.z0Container_1jdd6it{margin-left:auto;margin-right:auto;padding-top:64px;padding-left:8px;padding-right:8px}
+.z0Container_35iemg{color:#1d0016}
+.z0H4_35iemg{color:#1d0016}
+.z0H4_1yj88ak{border-color:#1d0016}
+.z0Link_35iemg{color:#1d0016}
+.z0AspectRatio_1f4nkmj{background-color:#f2f2f8}
+.z0H3_1oe3gjs{margin-bottom:0px;margin-top:8px}
+.z0H3_35iemg{color:#1d0016}
+.z0H4_12zrzid{margin-top:64px}
+.z0Ul_m2eadc{margin-bottom:128px;padding-left:0px}
+.z0TextLink_35iemg{color:#1d0016}
+.z0TextLink_xwzhil:hover{color:#ff5a28;transition:color .125s ease-out}
+.z0TextLink_1xabmv6:focus{color:#ff5a28}
+.z0TextLink_1nkieb7{padding-left:16px;padding-top:0px;padding-bottom:0px}</style></head><body><div id="app"><div><div style="font-family:-apple-system, BlinkMacSystemFont, sans-serif;line-height:1.5;color:#000;"><div><div class="z0Flex_1dv9ts4 z0Flex_mdmmr9 z0Flex_k206nx z0Flex_6hoen5 z0Flex_1agckgk z0Flex_1rr4jcp z0Box_1dv9ts4 z0Box_mdmmr9 z0Box_mdmmr9"><div class="z0Box_1npp29g z0Box_102tqs0 z0Box_mdmmr9 z0Box_mdmmr9"><div class="z0Div_mdmmr9 z0Div_mdmmr9 z0Div_mdmmr9"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="z0Svg_mdmmr9 z0Svg_3h4hbk z0Svg_mdmmr9 z0Svg_16d3ta3 z0Svg_f2dgne"><path fill="currentColor" d="M16 7 C13 7 2 9 2 16 C2 23 6 23 10 24 L11 28 L12 26 L20 26 L21 28 L22 24 C26 23 30 23 30 16 C30 9 19 7 16 7 M4 18 A4 4 0 0 1 12 18 A4 4 0 0 1 4 18 M20 18 A4 4 0 0 1 28 18 A4 4 0 0 1 20 18 "></path></svg></div></div><nav class="z0Nav_16e1kl6 z0Nav_mdmmr9 z0Nav_mdmmr9"><div style="display:inline-block;" class="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"><a href="#work" class="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09">Work</a></div><div style="display:inline-block;" class="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"><a href="http://mrmrs.github.io/writing" class="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09">Writing</a></div><div style="display:inline-block;" class="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"><a href="/reading/" class="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09">Reading</a></div><div style="display:inline-block;" class="z0Box_4zbkq4 z0Box_mdmmr9 z0Box_mdmmr9"><a href="https://github.com/mrmrs/" class="z0NavLink_tt19w7 z0NavLink_975b7n z0NavLink_1nkieb7 z0NavLink_35iemg z0NavLink_1bkox09">GitHub</a></div></nav></div><header class="z0Header_11vhgrl z0Header_12sm5qv z0Header_mdmmr9"><div class="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3"><div class="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9"><h1 class="z0H1_1o2ezep z0H1_12jqrxu z0H1_ngp8oq z0H1_1bmf5hr z0H1_35iemg z0H1_m6ozqw">Trying to make the web: fast, readable, and easy to navigate.</h1></div></div></header><div class="z0Box_3ct8mo z0Box_w8x2v6 z0Box_8ctdvs z0Box_mdmmr9"><div class="z0Container_tt19w7 z0Container_1jdd6it z0Container_35iemg z0Container_6osar3"><div class="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9"><h4 id="work" class="z0H4_1ycl9dg z0H4_mdmmr9 z0H4_35iemg z0H4_1yj88ak z0H4_11gibmt">Work</h4></div><div class="z0Flex_mdmmr9 z0Flex_mdmmr9 z0Flex_1rr4jcp z0Box_mdmmr9 z0Box_mdmmr9 z0Box_mdmmr9"><div class="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9"><a class="z0Link_i2atn7 z0Link_iisq1y z0Link_35iemg z0Link_mdmmr9 z0Link_jm3649 z0Link_mdmmr9 z0Link_15081t5 z0Link_mdmmr9 z0Link_4kbyf6 z0Link_16bnkq z0Link_1l0da3s"><div class="z0AspectRatio_1dte17j z0AspectRatio_1f4nkmj z0AspectRatio_leueqe"><div style="background-image:url(https://s3-us-west-1.amazonaws.com/c8r-x0/tachyons-dark.png);" class="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_hqpzos"></div></div><h3 class="z0H3_16557ik z0H3_55w3hf z0H3_1oe3gjs z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">Tachyons</h3><p class="z0P_i2atn7 z0P_10plfnz z0P_1m6kqzy z0P_mdmmr9 z0P_1kdxcfv">Functional CSS Toolkit</p></a></div><div class="z0Box_ywo3zt z0Box_w8x2v6 z0Box_pq7l2s z0Box_1snu2vi z0Box_mdmmr9 z0Box_mdmmr9"><a class="z0Link_i2atn7 z0Link_iisq1y z0Link_35iemg z0Link_mdmmr9 z0Link_jm3649 z0Link_mdmmr9 z0Link_15081t5 z0Link_mdmmr9 z0Link_4kbyf6 z0Link_16bnkq z0Link_1l0da3s"><div class="z0AspectRatio_1dte17j z0AspectRatio_1f4nkmj z0AspectRatio_leueqe"><div style="background-image:url(http://compositor.s3.amazonaws.com/images/bikeshed-hero-2.jpg);" class="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_hqpzos"></div></div><h3 class="z0H3_16557ik z0H3_55w3hf z0H3_1oe3gjs z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">Compositor</h3><p class="z0P_i2atn7 z0P_10plfnz z0P_1m6kqzy z0P_mdmmr9 z0P_1kdxcfv">Tools for Designers</p></a></div></div><div class="z0Flex_6dz4ec z0Flex_mdmmr9 z0Flex_1rr4jcp z0Box_6dz4ec z0Box_mdmmr9 z0Box_mdmmr9"><div class="z0Box_ywo3zt z0Box_i86xbc z0Box_mdmmr9 z0Box_mdmmr9"><a class="z0Link_i2atn7 z0Link_iisq1y z0Link_35iemg z0Link_mdmmr9 z0Link_jm3649 z0Link_mdmmr9 z0Link_15081t5 z0Link_mdmmr9 z0Link_4kbyf6 z0Link_16bnkq z0Link_1l0da3s"><div class="z0AspectRatio_1dte17j z0AspectRatio_1f4nkmj z0AspectRatio_leueqe"><div style="background-image:url(https://s3-us-west-1.amazonaws.com/c8r-x0/mrsjxn.png);" class="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_hqpzos"></div></div><h3 class="z0H3_16557ik z0H3_55w3hf z0H3_1oe3gjs z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">MrsJxn</h3><p class="z0P_i2atn7 z0P_10plfnz z0P_1m6kqzy z0P_mdmmr9 z0P_1kdxcfv">Post-future beats</p></a></div><div class="z0Box_ywo3zt z0Box_i86xbc z0Box_mdmmr9 z0Box_mdmmr9"><a class="z0Link_i2atn7 z0Link_iisq1y z0Link_35iemg z0Link_mdmmr9 z0Link_jm3649 z0Link_mdmmr9 z0Link_15081t5 z0Link_mdmmr9 z0Link_4kbyf6 z0Link_16bnkq z0Link_1l0da3s"><div class="z0AspectRatio_1dte17j z0AspectRatio_1f4nkmj z0AspectRatio_leueqe"><div style="background-image:url(http://mrmrs.github.io/up/images/IMG_2588.JPG);" class="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_hqpzos"></div></div><h3 class="z0H3_16557ik z0H3_55w3hf z0H3_1oe3gjs z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">Up &amp; in Thirds</h3><p class="z0P_i2atn7 z0P_10plfnz z0P_1m6kqzy z0P_mdmmr9 z0P_1kdxcfv">A collection of photographs</p></a></div></div><div class="z0Flex_6dz4ec z0Flex_mdmmr9 z0Flex_1rr4jcp z0Box_6dz4ec z0Box_mdmmr9 z0Box_mdmmr9"><div class="z0Box_ywo3zt z0Box_w8x2v6 z0Box_mdmmr9 z0Box_mdmmr9"><a class="z0Link_i2atn7 z0Link_iisq1y z0Link_35iemg z0Link_mdmmr9 z0Link_jm3649 z0Link_mdmmr9 z0Link_15081t5 z0Link_mdmmr9 z0Link_4kbyf6 z0Link_16bnkq z0Link_1l0da3s"><div class="z0AspectRatio_1dte17j z0AspectRatio_1f4nkmj z0AspectRatio_leueqe"><div style="background-image:url(https://s3-us-west-1.amazonaws.com/gfffs/diamonds-2.gif);" class="z0AspectRatioObject_mdmmr9 z0AspectRatioObject_w8x2v6 z0AspectRatioObject_mdmmr9 z0AspectRatioObject_hqpzos"></div></div><h3 class="z0H3_16557ik z0H3_55w3hf z0H3_1oe3gjs z0H3_35iemg z0H3_x1yig9 z0H3_mdmmr9">Gfffs</h3><p class="z0P_i2atn7 z0P_10plfnz z0P_1m6kqzy z0P_mdmmr9 z0P_1kdxcfv">Hi-def gifs for the super-bored</p></a></div></div></div><div class="z0Container_bpfrzz z0Container_mdmmr9 z0Container_6osar3"><div class="z0Box_ywo3zt z0Box_mdmmr9 z0Box_mdmmr9"><h4 id="writing" class="z0H4_1ycl9dg z0H4_12zrzid z0H4_35iemg z0H4_1yj88ak z0H4_11gibmt">Writing</h4><ul class="z0Ul_m2eadc z0Ul_mdmmr9 z0Ul_aw2unr"><li class="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9"><a href="http://mrmrs.github.io/writing/2016/03/24/scalable-css/" class="z0TextLink_1b8l9c0 z0TextLink_5jxka6 z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_xwzhil z0TextLink_mdmmr9 z0TextLink_1xabmv6 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_xzqok7">CSS and Scalability</a></li><li class="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9"><a href="http://mrmrs.github.io/writing/2016/03/23/the-veil-of-ignorance/" class="z0TextLink_1b8l9c0 z0TextLink_5jxka6 z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_xwzhil z0TextLink_mdmmr9 z0TextLink_1xabmv6 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_xzqok7">Veil of Ignorance</a></li><li class="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9"><a href="http://mrmrs.github.io/writing/2016/04/26/dogma/" class="z0TextLink_1b8l9c0 z0TextLink_5jxka6 z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_xwzhil z0TextLink_mdmmr9 z0TextLink_1xabmv6 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_xzqok7">Growing up with Dogma</a></li><li class="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9"><a href="http://mrmrs.github.io/writing/2015/10/06/design-systems/" class="z0TextLink_1b8l9c0 z0TextLink_5jxka6 z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_xwzhil z0TextLink_mdmmr9 z0TextLink_1xabmv6 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_xzqok7">Design Systems</a></li><li class="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9"><a href="http://mrmrs.github.io/writing/2015/07/27/too-many-tools/" class="z0TextLink_1b8l9c0 z0TextLink_5jxka6 z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_xwzhil z0TextLink_mdmmr9 z0TextLink_1xabmv6 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_xzqok7">Too Many Tools and Frameworks</a></li><li class="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9"><a href="http://mrmrs.github.io/writing/2016/03/17/webfonts/" class="z0TextLink_1b8l9c0 z0TextLink_5jxka6 z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_xwzhil z0TextLink_mdmmr9 z0TextLink_1xabmv6 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_xzqok7">Webfonts</a></li><li class="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9"><a href="http://mrmrs.github.io/writing/2015/05/14/what-are-classes-for/" class="z0TextLink_1b8l9c0 z0TextLink_5jxka6 z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_xwzhil z0TextLink_mdmmr9 z0TextLink_1xabmv6 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_xzqok7">What are Classes for?</a></li><li class="z0ListItem_mdmmr9 z0ListItem_mdmmr9 z0ListItem_kewhca z0ListItem_mdmmr9"><a href="http://mrmrs.github.io/writing/2013/12/10/vim-as-a-design-tool/" class="z0TextLink_1b8l9c0 z0TextLink_5jxka6 z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_xwzhil z0TextLink_mdmmr9 z0TextLink_1xabmv6 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_xzqok7">Vim as a Design Tool</a></li></ul></div><p class="z0P_mdmmr9 z0P_mdmmr9 z0P_1kdxcfv"><a href="https://compositor.io/lab" class="z0TextLink_i2atn7 z0TextLink_1nkieb7 z0TextLink_35iemg z0TextLink_mdmmr9 z0TextLink_xwzhil z0TextLink_mdmmr9 z0TextLink_1xabmv6 z0TextLink_mdmmr9 z0TextLink_4kbyf6 z0TextLink_xzqok7">Built with Lab</a></p></div></div></div></div></div></div> 
+<script>
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-39529635-1']);
       _gaq.push(['_trackPageview']);
@@ -397,4 +219,4 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-</body>
+</body></html>
